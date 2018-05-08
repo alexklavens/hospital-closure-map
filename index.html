@@ -17,17 +17,18 @@ html, body {
   pointer-events: all;
 }
 #states {
-    fill: #cdcdcd;
+    /* fill: #cdcdcd; */
+    fill: rgb(247, 247, 247);
 }
 
 #counties {
-  fill: #cdcdcd;
+  /* fill: #cdcdcd; */
 }
 
 #borders {
   fill: none;
-  stroke: white;/*#00435c;*/
-  stroke-width: 2px;
+  stroke: gray;/*#00435c;*/
+  stroke-width: 1px;
   stroke-linejoin: round;
   stroke-linecap: round;
   pointer-events: none;
@@ -35,7 +36,7 @@ html, body {
 
 #county-borders {
   fill: none;
-  stroke: white;/*#00435c;*/
+  stroke: gray;/*#00435c;*/
   stroke-width: .3px;
   stroke-linejoin: round;
   stroke-linecap: round;
@@ -48,18 +49,20 @@ html, body {
 } */
 
 #symbol {
-  fill: steelblue;
+  fill: rgb(255, 100, 5);
   fill-opacity: .8;
   stroke: #fff;
   stroke-width: .5px;
 }
 
 #symbol .active {
-  fill: orange;
+  fill: steelblue;
   fill-opacity: .6;
 }
 table {
   margin-bottom: 20px;
+  table-layout: auto;
+  border-collapse: collapse;
 }
 
 table, th, td {
@@ -67,27 +70,25 @@ table, th, td {
   border-collapse: collapse;
 }
 
-th, td {
-    margin: 10px;
-    text-align: center;
+th {
+  background: rgb(9, 189, 0);
 }
 
-
-
-h1, table {
-  margin-left: auto;
-  margin-right: auto;
+th, td {
+    margin: 10px;
+    text-align: left;
+    padding: 15px;
 }
 
 h1 {
-  text-align: center;
+  text-align: left;
 }
 
 </style>
 <body>
 <script src="https://d3js.org/d3.v3.min.js"></script>
 <script src="https://d3js.org/topojson.v1.min.js"></script>
-<script src="https://d3js.org/queue.v1.min.js"></script>
+<script src="http://d3js.org/queue.v1.min.js"></script>
 
 <body>
   <div id="info-box">
@@ -98,13 +99,17 @@ h1 {
         <th>Hospital</th>
         <th>Closure Year</th>
         <th>Number of Beds</th>
+        <th>Location</th>
         <th>Coordinates</th>
+
       </tr>
       <tr>
-        <td width ="500px" height: "300px" id="hos-name"> hospital_name </td>
+        <td width ="450px" id="hos-name"> hospital_name </td>
         <td id="closure-date"> closure_date </td>
         <td id="num-beds"> number_of_beds </td>
+        <td width="200px" id="city-state"> city, state</td>
         <td width="200px" id="coords"> coords</td>
+
       </tr>
     </table>
   </div>
@@ -161,17 +166,22 @@ function ready(error, us, hospital) {
     .enter().append("path")
     .attr("d", path);
 
-
-// counties
-  g.append("path")
-    .datum(topojson.mesh(us, us.objects.counties, function (a,b) {return a !== b;}))
-    .attr("id", "county-borders")
-    .attr("d", path(topojson.mesh(us, us.objects.counties, function(a, b) { return a !== b; })));
-
   g.append("path")
     .datum(topojson.mesh(us, main_geo_unit, function (a, b){return a !== b;}))
     .attr("id", "borders")
-    .attr("d", path(topojson.mesh(us, main_geo_unit, function(a, b) { return a !== b; })));
+    .attr("d", path(topojson.mesh(us, main_geo_unit, function(a, b) { return a = b; })));
+
+
+    g.append("path")
+      .datum(topojson.mesh(us, us.objects.counties, function (a,b) {return a !== b;}))
+      .attr("id", "county-borders")
+      .attr("d", path(topojson.mesh(us, us.objects.counties, function(a, b) { return a !== b; })));
+
+
+function zoomIn_counties(){
+    d3.select('#county-borders')
+    .attr("d", path(topojson.mesh(us, us.objects.counties, function(a, b) { return a == b; })));
+  }
 
 
   var anyActive;
@@ -185,20 +195,19 @@ function ready(error, us, hospital) {
         active_hospital = d;
         anyActive = clicked(d);
         returnTitle(d);
-        if (anyActive == false) {
+        if (anyActive == false) { //zoom out
            zoomedIn = false; adjustRadius(1, 2000);
            d3.selectAll("g").style("stroke-width",".2px");
-
          }
-        else {
+        else { //zoom in
           d3.selectAll("g").style("stroke-width",".1px");
           zoomedIn = true; adjustRadius(.2, trans);
+          zoomIn_counties();
         }})
       .on("mouseover",function(d){
         if (zoomedIn == false) {
           returnTitle(d);
         } else if (zoomedIn) {
-
         } else if (zoomedIn && d == active_hospital) {
           console.log(d);
         }
@@ -222,6 +231,7 @@ function returnTitle(d){
   document.getElementById('closure-date').innerHTML = d.properties["Closure_Year"]
   document.getElementById('num-beds').innerHTML = d.properties["Number_of_Beds"];
   document.getElementById('coords').innerHTML = d.geometry.coordinates;
+  document.getElementById('city-state').innerHTML = d.properties["City"] + ", " + d.properties["State"];
 
 }
 
