@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<style>
+
+html {
+  font-family: Times;
+  font-weight: lighter;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+.background {
+  fill: none;
+  pointer-events: all;
+}
+#states {
+    fill: #cdcdcd;
+}
+
+#counties {
+  fill: #cdcdcd;
+}
+
+#borders {
+  fill: none;
+  stroke: white;/*#00435c;*/
+  stroke-width: 2px;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+  pointer-events: none;
+}
+
+#county-borders {
+  fill: none;
+  stroke: white;/*#00435c;*/
+  stroke-width: .3px;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+  pointer-events: none;
+}
+
+/* .states {
+  fill: #ccc;
+  stroke: #fff;
+} */
+
+#symbol {
+  fill: steelblue;
+  fill-opacity: .8;
+  stroke: #fff;
+  stroke-width: .5px;
+}
+
+#symbol .active {
+  fill: orange;
+  fill-opacity: .6;
+}
+table {
+  margin-bottom: 20px;
+}
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+th, td {
+    margin: 10px;
+    text-align: center;
+}
+
+
+
+h1, table {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h1 {
+  text-align: center;
+}
+
+</style>
+<body>
+<script src="https://d3js.org/d3.v3.min.js"></script>
+<script src="https://d3js.org/topojson.v1.min.js"></script>
+<script src="http://d3js.org/queue.v1.min.js"></script>
+
+<body>
+  <div id="info-box">
+
+    <h1>U.S. Hospital Closures Since 2005</h1>
+    <table>
+      <tr>
+        <th>Hospital</th>
+        <th>Closure Year</th>
+        <th>Number of Beds</th>
+        <th>Coordinates</th>
+      </tr>
+      <tr>
+        <td width ="500px" height: "300px" id="hos-name"> hospital_name </td>
+        <td id="closure-date"> closure_date </td>
+        <td id="num-beds"> number_of_beds </td>
+        <td width="200px" id="coords"> coords</td>
+      </tr>
+    </table>
+  </div>
+</body>
+
+<script>
+var mult = 1;
+var width = 1080 * mult,
+    height = 600 * mult,
+    trans = 750,
+    zoomedIn = false,
+    centered;
+
+var radius = d3.scale.sqrt()
+    .domain([0, 25])
+    .range([2, 10]);
+
+// width= width * 1.4;
+var projection = d3.geo.albersUsa()
+  // .scale(1070)
+  .scale(width)
+  .translate([width / 2, height / 2]);
+
+var path = d3.geo.path()
+  .projection(projection);
+
+var svg = d3.select("body").append("svg")
+    .attr("width", "100%")
+    .attr("height", "100%");
+
+    svg.append("rect")
+      .attr("class","background")
+      .attr("width", "100%")
+      .attr("height", "100%")
+      .on("click", clicked);
+
+var g = svg.append("g");
+
+queue()
+    .defer(d3.json, "us.json")
+    .defer(d3.json, "hospitals.json")
+    .await(ready);
+
+function ready(error, us, hospital) {
+  if (error) throw error;
+
+  var active_hospital;
+  main_geo_unit = us.objects.states;
+
+  g.append("g")
+    .attr("id", "states")
+    .selectAll("path")
+    .data(topojson.feature(us, main_geo_unit).features)
+    .enter().append("path")
+    .attr("d", path);
+
+
+// counties
+  g.append("path")
+    .datum(topojson.mesh(us, us.objects.counties, function (a,b) {return a !== b;}))
+    .attr("id", "county-borders")
+    .attr("d", path(topojson.mesh(us, us.objects.counties, function(a, b) { return a !== b; })));
+
+  g.append("path")
+    .datum(topojson.mesh(us, main_geo_unit, function (a, b){return a !== b;}))
+    .attr("id", "borders")
+    .attr("d", path(topojson.mesh(us, main_geo_unit, function(a, b) { return a !== b; })));
+
+
+  var anyActive;
+  g.append("g")
+    .attr("id","symbol")
+    .selectAll("path")
+    .data(hospital.features.sort(function(a, b) { return parseInt(b.Number_of_Beds) - parseInt(a.Number_of_Beds); }))
+    .enter().append("path")
+    .attr("d",path.pointRadius(function (d) {return radius(d.properties["Number_of_Beds"])}))
+      .on("click",function(d){
+        active_hospital = d;
+        anyActive = clicked(d);
+        returnTitle(d);
+        if (anyActive == false) {
+           zoomedIn = false; adjustRadius(1, 2000);
+           d3.selectAll("g").style("stroke-width",".2px");
+
+         }
+        else {
+          d3.selectAll("g").style("stroke-width",".1px");
+          zoomedIn = true; adjustRadius(.2, trans);
+        }})
+      .on("mouseover",function(d){
+        if (zoomedIn == false) {
+          returnTitle(d);
+        } else if (zoomedIn) {
+
+        } else if (zoomedIn && d == active_hospital) {
+          console.log(d);
+        }
+        d3.select(this).style("stroke","#000");
+        })
+
+
+      .on("mouseout",function(){
+      d3.select(this).style("stroke","#FFF");});
+}
+
+function adjustRadius(adjust_fraction, durr = trans){
+  var working = g.select("#symbol").selectAll("path")
+    .transition()
+      .duration(durr)
+      .attr("d",path.pointRadius(function(d){return radius(d.properties.Number_of_Beds)*adjust_fraction}));
+  }
+
+function returnTitle(d){
+  document.getElementById('hos-name').innerHTML = d.properties.Hospital;
+  document.getElementById('closure-date').innerHTML = d.properties["Closure_Year"]
+  document.getElementById('num-beds').innerHTML = d.properties["Number_of_Beds"];
+  document.getElementById('coords').innerHTML = d.geometry.coordinates;
+
+}
+
+function makeList(d){
+  for (var property in d){
+    if (property == "properties"){
+      var list = document.createElement('ul');
+      for (var sub in d[property]){
+        // console.log(sub + " ----- " + d[property][sub]);
+        var item = document.createElement("li");
+        item.appendChild(document.createTextNode(sub));
+        list.appendChild(item)
+      }
+    }
+  }
+  return list;
+}
+
+function set_data_box(d){
+  var list = document.getElementById("info-box");
+  list.removeChild(list.childNodes[0]);
+  console.log(list)
+  var newItem = document.getElementById('info-box').appendChild(makeList(d));
+}
+
+function clicked(d) {
+  // console.log(d.properties.Number_of_Beds);
+  var x, y, k, zoomedIn;
+  if (d && centered !== d) {
+    var centroid = path.centroid(d);
+    x = centroid[0];
+    y = centroid[1];
+    k = 15;
+    centered = d;
+    zoomedIn = true;
+  } else {
+    x = width / 2;
+    y = height / 2;
+    k = 1;
+    centered = null;
+    zoomedIn = false;
+  }
+
+  g.selectAll("path")
+      .classed("active", centered && function(d) { return d === centered; });
+
+  g.transition()
+      .duration(trans)
+      .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")scale(" + k + ")translate(" + -x + "," + -y + ")")
+      .style("stroke-width", 1.5 / k + "px");
+  return zoomedIn;
+
+}
+
+
+</script>

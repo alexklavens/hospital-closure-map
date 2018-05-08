@@ -1,0 +1,3180 @@
+{
+	"type": "FeatureCollection",
+	"features": [
+		{
+			"type": "Feature",
+			"id": 0,
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					-119.548511,
+					36.512567
+				]
+			},
+			"properties": {
+				"Hospital": "Kingsburg Medical Center",
+				"City": "Kingsburg",
+				"State": "California",
+				"RUCA": 4,
+				"CBSA": "Metro",
+				"Medicare_Payment": "PPS",
+				"Closure_Month": "May",
+				"Closure_Year": 2010,
+				"Number_of_Beds": 15,
+				"Current_Status": "Rural Health clinic remains in adjacent building, bought and operated by Tulare Regional Med Center",
+				"Longitude": -119.548511,
+				"Latitude": 36.512567
+			}
+		},
+		{
+			"type": "Feature",
+			"id": 1,
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					-99.8001,
+					45.2304
+				]
+			},
+			"properties": {
+				"Hospital": "Holy Infant Hospital",
+				"City": "Hoven",
+				"State": "South Dakota",
+				"RUCA": 10,
+				"CBSA": "Neither",
+				"Medicare_Payment": "Re-based SCH",
+				"Closure_Month": "October",
+				"Closure_Year": 2010,
+				"Number_of_Beds": 22,
+				"Current_Status": "Clinic open 2-3 days/week",
+				"Longitude": -99.8001,
+				"Latitude": 45.2304
+			}
+		},
+		{
+			"type": "Feature",
+			"id": 2,
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					-92.969495,
+					45.823333
+				]
+			},
+			"properties": {
+				"Hospital": "Lakeside Medical Center",
+				"City": "Pine City",
+				"State": "Minnesota",
+				"RUCA": 7,
+				"CBSA": "Neither",
+				"Medicare_Payment": "PPS",
+				"Closure_Month": "December",
+				"Closure_Year": 2010,
+				"Number_of_Beds": 10,
+				"Current_Status": "Nursing home, occ/phys therapy, u0026 dialysis center.",
+				"Longitude": -92.969495,
+				"Latitude": 45.823333
+			}
+		},
+		{
+			"type": "Feature",
+			"id": 3,
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					-91.498356,
+					44.246342
+				]
+			},
+			"properties": {
+				"Hospital": "Franciscan Skemp Medical Center",
+				"City": "Arcadia",
+				"State": "Wisconsin",
+				"RUCA": 7,
+				"CBSA": "Neither",
+				"Medicare_Payment": "CAH",
+				"Closure_Month": "March",
+				"Closure_Year": 2011,
+				"Number_of_Beds": 25,
+				"Current_Status": "Mayo clinic remains.",
+				"Longitude": -91.498356,
+				"Latitude": 44.246342
+			}
+		},
+		{
+			"type": "Feature",
+			"id": 4,
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					-85.388289,
+					33.158822
+				]
+			},
+			"properties": {
+				"Hospital": "Randolph Medical Center",
+				"City": "Roanoke",
+				"State": "Alabama",
+				"RUCA": 7,
+				"CBSA": "Neither",
+				"Medicare_Payment": "CAH",
+				"Closure_Month": "March",
+				"Closure_Year": 2011,
+				"Number_of_Beds": 12,
+				"Current_Status": "None",
+				"Longitude": -85.388289,
+				"Latitude": 33.158822
+			}
+		},
+		{
+			"type": "Feature",
+			"id": 5,
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					-98.78674,
+					38.366398
+				]
+			},
+			"properties": {
+				"Hospital": "Central Kansas Medical Center",
+				"City": "Great Bend",
+				"State": "Kansas",
+				"RUCA": 4,
+				"CBSA": "Micro",
+				"Medicare_Payment": "Re-based SCH",
+				"Closure_Month": "April",
+				"Closure_Year": 2011,
+				"Number_of_Beds": 41,
+				"Current_Status": "Renamed St. Rose Ambulatory u0026 Surgical Ctr u0026 offers urgent care, outpatient services, imaging services, u0026 sleep disorder center.",
+				"Longitude": -98.78674,
+				"Latitude": 38.366398
+			}
+		},
+		{
+			"type": "Feature",
+			"id": 6,
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					-87.738143,
+					31.931165
+				]
+			},
+			"properties": {
+				"Hospital": "SouthWest Alabama Medical Center",
+				"City": "Thomasville",
+				"State": "Alabama",
+				"RUCA": 7,
+				"CBSA": "Neither",
+				"Medicare_Payment": "PPS",
+				"Closure_Month": "August",
+				"Closure_Year": 2011,
+				"Number_of_Beds": 27,
+				"Current_Status": "None",
+				"Longitude": -87.738143,
+				"Latitude": 31.931165
+			}
+		},
+		{
+			"type": "Feature",
+			"id": 7,
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					-113.985677,
+					35.221288
+				]
+			},
+			"properties": {
+				"Hospital": "Hualapai Mountain Medical Center",
+				"City": "Kingman",
+				"State": "Arizona",
+				"RUCA": 4,
+				"CBSA": "Metro",
+				"Medicare_Payment": "PPS",
+				"Closure_Month": "September",
+				"Closure_Year": 2011,
+				"Number_of_Beds": 70,
+				"Current_Status": "Bought by Kingman Regional Med Ctr and currently operating as their Acute Rehabilitation unit",
+				"Longitude": -113.985677,
+				"Latitude": 35.221288
+			}
+		},
+		{
+			"type": "Feature",
+			"id": 8,
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					-83.135092,
+					41.338998
+				]
+			},
+			"properties": {
+				"Hospital": "Physicians Choice Hospital-Fremont",
+				"City": "Fremont",
+				"State": "Ohio",
+				"RUCA": 4,
+				"CBSA": "Micro",
+				"Medicare_Payment": "PPS",
+				"Closure_Month": "March",
+				"Closure_Year": 2012,
+				"Number_of_Beds": 8,
+				"Current_Status": "Leased by Memorial Hospital Mar 2012 but no subsequent info on property use since then.",
+				"Longitude": -83.135092,
+				"Latitude": 41.338998
+			}
+		},
+		{
+			"type": "Feature",
+			"id": 9,
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					-81.028904,
+					33.30773
+				]
+			},
+			"properties": {
+				"Hospital": "Bamberg County Memorial Hospital",
+				"City": "Bamberg",
+				"State": "South Carolina",
+				"RUCA": 7,
+				"CBSA": "Neither",
+				"Medicare_Payment": "PPS",
+				"Closure_Month": "April",
+				"Closure_Year": 2012,
+				"Number_of_Beds": 59,
+				"Current_Status": "None",
+				"Longitude": -81.028904,
+				"Latitude": 33.30773
+			}
+		},
+		{
+			"type": "Feature",
+			"id": 10,
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					-76.330082,
+					40.771469
+				]
+			},
+			"properties": {
+				"Hospital": "Saint Catherine Medical Center Fountain Springs",
+				"City": "Ashland",
+				"State": "Pennsylvania",
+				"RUCA": 7,
+				"CBSA": "Micro",
+				"Medicare_Payment": "PPS",
+				"Closure_Month": "April",
+				"Closure_Year": 2012,
+				"Number_of_Beds": 53,
+				"Current_Status": "None",
+				"Longitude": -76.330082,
+				"Latitude": 40.771469
+			}
+		},
+		{
+			"type": "Feature",
+			"id": 11,
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					-84.481213,
+					45.631397
+				]
+			},
+			"properties": {
+				"Hospital": "Cheboygan Memorial Hospital",
+				"City": "Cheboygan",
+				"State": "Mchigan",
+				"RUCA": 7,
+				"CBSA": "Neither",
+				"Medicare_Payment": "CAH",
+				"Closure_Month": "April",
+				"Closure_Year": 2012,
+				"Number_of_Beds": 25,
+				"Current_Status": "24-hr Emergency Dept u0026 Outpatient Services Ctr opened by McLaren HC 05/2012.",
+				"Longitude": -84.481213,
+				"Latitude": 45.631397
+			}
+		},
+		{
+			"type": "Feature",
+			"id": 12,
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					-82.939867,
+					34.346154
+				]
+			},
+			"properties": {
+				"Hospital": "Hart County Hospital",
+				"City": "Hartwell",
+				"State": "Georgia",
+				"RUCA": 7,
+				"CBSA": "Neither",
+				"Medicare_Payment": "MDH",
+				"Closure_Month": "May",
+				"Closure_Year": 2012,
+				"Number_of_Beds": 82,
+				"Current_Status": "None",
+				"Longitude": -82.939867,
+				"Latitude": 34.346154
+			}
+		},
+		{
+			"type": "Feature",
+			"id": 13,
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					-111.393986,
+					33.0259
+				]
+			},
+			"properties": {
+				"Hospital": "Florence Community Healthcare",
+				"City": "Florence",
+				"State": "Arizona",
+				"RUCA": 4,
+				"CBSA": "Metro",
+				"Medicare_Payment": "CAH",
+				"Closure_Month": "June",
+				"Closure_Year": 2012,
+				"Number_of_Beds": 25,
+				"Current_Status": "None",
+				"Longitude": -111.393986,
+				"Latitude": 33.0259
+			}
+		},
+		{
+			"type": "Feature",
+			"id": 14,
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					-95.358169,
+					35.782674
+				]
+			},
+			"properties": {
+				"Hospital": "Muskogee Community Hospital",
+				"City": "Muskogee",
+				"State": "Oklahoma",
+				"RUCA": 4,
+				"CBSA": "Micro",
+				"Medicare_Payment": "PPS",
+				"Closure_Month": "July",
+				"Closure_Year": 2012,
+				"Number_of_Beds": 45,
+				"Current_Status": "East campus of new Eastar Health System. Offers outpatient services, imaging, occupational services, u0026 a sleep center.",
+				"Longitude": -95.358169,
+				"Latitude": 35.782674
+			}
+		},
+		{
+			"type": "Feature",
+			"id": 15,
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					-86.623031,
+					32.853347
+				]
+			},
+			"properties": {
+				"Hospital": "Chilton Medical Center",
+				"City": "Clanton",
+				"State": "Alabama",
+				"RUCA": 7,
+				"CBSA": "Metro",
+				"Medicare_Payment": "PPS",
+				"Closure_Month": "November",
+				"Closure_Year": 2012,
+				"Number_of_Beds": 27,
+				"Current_Status": "None",
+				"Longitude": -86.623031,
+				"Latitude": 32.853347
+			}
+		},
+		{
+			"type": "Feature",
+			"id": 16,
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					-96.278828,
+					32.70809
+				]
+			},
+			"properties": {
+				"Hospital": "Renaissance Hospital Terrell",
+				"City": "Terrell",
+				"State": "Texas",
+				"RUCA": 4,
+				"CBSA": "Metro",
+				"Medicare_Payment": "PPS",
+				"Closure_Month": "February",
+				"Closure_Year": 2013,
+				"Number_of_Beds": 106,
+				"Current_Status": "None",
+				"Longitude": -96.278828,
+				"Latitude": 32.70809
+			}
+		},
+		{
+			"type": "Feature",
+			"id": 17,
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					-86.076373,
+					31.428972
+				]
+			},
+			"properties": {
+				"Hospital": "Elba General Hospital",
+				"City": "Elba",
+				"State": "Alabama",
+				"RUCA": 10,
+				"CBSA": "Micro",
+				"Medicare_Payment": "MDH",
+				"Closure_Month": "February",
+				"Closure_Year": 2013,
+				"Number_of_Beds": 20,
+				"Current_Status": "Skilled Nursing u0026 Rehab Facility expanded into hosp bldg.",
+				"Longitude": -86.076373,
+				"Latitude": 31.428972
+			}
+		},
+		{
+			"type": "Feature",
+			"id": 18,
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					-84.66115,
+					32.08911
+				]
+			},
+			"properties": {
+				"Hospital": "Stewart-Webster Hospital",
+				"City": "Richland",
+				"State": "Georgia",
+				"RUCA": 10,
+				"CBSA": "Neither",
+				"Medicare_Payment": "CAH",
+				"Closure_Month": "March",
+				"Closure_Year": 2013,
+				"Number_of_Beds": 25,
+				"Current_Status": "None",
+				"Longitude": -84.66115,
+				"Latitude": 32.08911
+			}
+		},
+		{
+			"type": "Feature",
+			"id": 19,
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					-84.7205,
+					31.4488
+				]
+			},
+			"properties": {
+				"Hospital": "Calhoun Mem Hospital",
+				"City": "Arlington",
+				"State": "Georgia",
+				"RUCA": 2,
+				"CBSA": "Neither",
+				"Medicare_Payment": "CAH",
+				"Closure_Month": "March",
+				"Closure_Year": 2013,
+				"Number_of_Beds": 25,
+				"Current_Status": "Outpatient services",
+				"Longitude": -84.7205,
+				"Latitude": 31.4488
+			}
+		},
+		{
+			"type": "Feature",
+			"id": 20,
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					-119.564103,
+					36.099777
+				]
+			},
+			"properties": {
+				"Hospital": "Corcoran District Hospital",
+				"City": "Corcoran",
+				"State": "California",
+				"RUCA": 4,
+				"CBSA": "Metro",
+				"Medicare_Payment": "PPS",
+				"Closure_Month": "March",
+				"Closure_Year": 2013,
+				"Number_of_Beds": 32,
+				"Current_Status": "Rural Health Clinic remains.",
+				"Longitude": -119.564103,
+				"Latitude": 36.099777
+			}
+		},
+		{
+			"type": "Feature",
+			"id": 21,
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					-94.190493,
+					31.797322
+				]
+			},
+			"properties": {
+				"Hospital": "Shelby Regional Medical Center",
+				"City": "Center",
+				"State": "Texas",
+				"RUCA": 7,
+				"CBSA": "Neither",
+				"Medicare_Payment": "PPS",
+				"Closure_Month": "July",
+				"Closure_Year": 2013,
+				"Number_of_Beds": 54,
+				"Current_Status": "None ",
+				"Longitude": -94.190493,
+				"Latitude": 31.797322
+			}
+		},
+		{
+			"type": "Feature",
+			"id": 22,
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					-90.470702,
+					33.182961
+				]
+			},
+			"properties": {
+				"Hospital": "Patient’s Choice Medical Center of Humphreys County",
+				"City": "Belzoni",
+				"State": "Mississippi",
+				"RUCA": 7,
+				"CBSA": "Neither",
+				"Medicare_Payment": "CAH",
+				"Closure_Month": "August",
+				"Closure_Year": 2013,
+				"Number_of_Beds": 25,
+				"Current_Status": "None",
+				"Longitude": -90.470702,
+				"Latitude": 33.182961
+			}
+		},
+		{
+			"type": "Feature",
+			"id": 23,
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					-82.004287,
+					30.845335
+				]
+			},
+			"properties": {
+				"Hospital": "Charlton Memorial Hospital",
+				"City": "Folkston",
+				"State": "Georgia",
+				"RUCA": 2,
+				"CBSA": "Neither",
+				"Medicare_Payment": "CAH",
+				"Closure_Month": "August",
+				"Closure_Year": 2013,
+				"Number_of_Beds": 15,
+				"Current_Status": "None",
+				"Longitude": -82.004287,
+				"Latitude": 30.845335
+			}
+		},
+		{
+			"type": "Feature",
+			"id": 24,
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					-83.0205,
+					36.76
+				]
+			},
+			"properties": {
+				"Hospital": "Lee Regional Medical Center",
+				"City": "Pennington Gap",
+				"State": "Virginia",
+				"RUCA": 10,
+				"CBSA": "Neither",
+				"Medicare_Payment": "MDH",
+				"Closure_Month": "October",
+				"Closure_Year": 2013,
+				"Number_of_Beds": 70,
+				"Current_Status": "None",
+				"Longitude": -83.0205,
+				"Latitude": 36.76
+			}
+		},
+		{
+			"type": "Feature",
+			"id": 25,
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					-81.676461,
+					36.128601
+				]
+			},
+			"properties": {
+				"Hospital": "Blowing Rock Hospital",
+				"City": "Blowing Rock",
+				"State": "North Carolina",
+				"RUCA": 10,
+				"CBSA": "Micro",
+				"Medicare_Payment": "CAH",
+				"Closure_Month": "October",
+				"Closure_Year": 2013,
+				"Number_of_Beds": 25,
+				"Current_Status": "Skilled Nursing u0026 Rehab Facility",
+				"Longitude": -81.676461,
+				"Latitude": 36.128601
+			}
+		},
+		{
+			"type": "Feature",
+			"id": 26,
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					-69.639842,
+					43.850818
+				]
+			},
+			"properties": {
+				"Hospital": "St. Andrews Hospital",
+				"City": "Boothbay Harbor",
+				"State": "Maine",
+				"RUCA": 10,
+				"CBSA": "Neither",
+				"Medicare_Payment": "CAH",
+				"Closure_Month": "October",
+				"Closure_Year": 2013,
+				"Number_of_Beds": 25,
+				"Current_Status": "24 hour Urgent Care Center",
+				"Longitude": -69.639842,
+				"Latitude": 43.850818
+			}
+		},
+		{
+			"type": "Feature",
+			"id": 27,
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					-97.762322,
+					33.219544
+				]
+			},
+			"properties": {
+				"Hospital": "Wise Regional Health System-Bridgeport",
+				"City": "Bridgeport",
+				"State": "Teas",
+				"RUCA": 7,
+				"CBSA": "Metro",
+				"Medicare_Payment": "PPS",
+				"Closure_Month": "December",
+				"Closure_Year": 2013,
+				"Number_of_Beds": 35,
+				"Current_Status": "Urgent Care Ambulatory Center",
+				"Longitude": -97.762322,
+				"Latitude": 33.219544
+			}
+		},
+		{
+			"type": "Feature",
+			"id": 28,
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					-86.3285,
+					31.0058
+				]
+			},
+			"properties": {
+				"Hospital": "Florala Memorial Hospital",
+				"City": "Florala",
+				"State": "Alabama",
+				"RUCA": 3,
+				"CBSA": "Neither",
+				"Medicare_Payment": "PPS",
+				"Closure_Month": "December",
+				"Closure_Year": 2013,
+				"Number_of_Beds": 22,
+				"Current_Status": "Primary care clinic reopened 04/2014. Addiction rehab center planned for hospital bldg.",
+				"Longitude": -86.3285,
+				"Latitude": 31.0058
+			}
+		},
+		{
+			"type": "Feature",
+			"id": 29,
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					-84.520467,
+					35.342315
+				]
+			},
+			"properties": {
+				"Hospital": "Starr Regional Medical Center- Etowah",
+				"City": "Etowah",
+				"State": "Tennessee",
+				"RUCA": 7,
+				"CBSA": "Micro",
+				"Medicare_Payment": "MDH",
+				"Closure_Month": "December",
+				"Closure_Year": 2013,
+				"Number_of_Beds": 60,
+				"Current_Status": "24-hr Emergency dept u0026 wound care",
+				"Longitude": -84.520467,
+				"Latitude": 35.342315
+			}
+		},
+		{
+			"type": "Feature",
+			"id": 30,
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					-88.890966,
+					35.813484
+				]
+			},
+			"properties": {
+				"Hospital": "Humboldt General Hospital",
+				"City": "Humboldt",
+				"State": "Tennessee",
+				"RUCA": 7,
+				"CBSA": "Neither",
+				"Medicare_Payment": "PPS",
+				"Closure_Month": "January",
+				"Closure_Year": 2014,
+				"Number_of_Beds": 42,
+				"Current_Status": "Emergency Department u0026 Outpatient Ctr",
+				"Longitude": -88.890966,
+				"Latitude": 35.813484
+			}
+		},
+		{
+			"type": "Feature",
+			"id": 31,
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					-88.939718,
+					35.962984
+				]
+			},
+			"properties": {
+				"Hospital": "Gibson General Hospital",
+				"City": "Trenton",
+				"State": "Tennessee",
+				"RUCA": 7,
+				"CBSA": "Neither",
+				"Medicare_Payment": "MDH",
+				"Closure_Month": "January",
+				"Closure_Year": 2014,
+				"Number_of_Beds": 41,
+				"Current_Status": "Urgent Care u0026 Outpatient Ctr",
+				"Longitude": -88.939718,
+				"Latitude": 35.962984
+			}
+		},
+		{
+			"type": "Feature",
+			"id": 32,
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					-97.320132,
+					31.950958
+				]
+			},
+			"properties": {
+				"Hospital": "Lake Whitney Medical Center",
+				"City": "Whitney",
+				"State": "Texas",
+				"RUCA": 10,
+				"CBSA": "Neither",
+				"Medicare_Payment": "MDH",
+				"Closure_Month": "March",
+				"Closure_Year": 2014,
+				"Number_of_Beds": 49,
+				"Current_Status": "None",
+				"Longitude": -97.320132,
+				"Latitude": 31.950958
+			}
+		},
+		{
+			"type": "Feature",
+			"id": 33,
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					-73.10854,
+					42.705844
+				]
+			},
+			"properties": {
+				"Hospital": "North Adams Regional Hospital",
+				"City": "North Adams",
+				"State": "Massachusetts",
+				"RUCA": 4,
+				"CBSA": "Metro",
+				"Medicare_Payment": "MDH ",
+				"Closure_Month": "March",
+				"Closure_Year": 2014,
+				"Number_of_Beds": 98,
+				"Current_Status": "24-hr Emergency Facility opened by Berkshire Med Ctr 05/2014 and Imaging ctr opened 07/2014.",
+				"Longitude": -73.10854,
+				"Latitude": 42.705844
+			}
+		},
+		{
+			"type": "Feature",
+			"id": 34,
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					-94.364418,
+					33.013567
+				]
+			},
+			"properties": {
+				"Hospital": "Good Shepherd Medical Center",
+				"City": "Linden",
+				"State": "Texas",
+				"RUCA": 10,
+				"CBSA": "Neither",
+				"Medicare_Payment": "CAH",
+				"Closure_Month": "April",
+				"Closure_Year": 2014,
+				"Number_of_Beds": 25,
+				"Current_Status": "None",
+				"Longitude": -94.364418,
+				"Latitude": 33.013567
+			}
+		},
+		{
+			"type": "Feature",
+			"id": 35,
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					-84.058762,
+					38.314915
+				]
+			},
+			"properties": {
+				"Hospital": "Nicholas County Hospital",
+				"City": "Carlisle",
+				"State": "Kentucky",
+				"RUCA": 10,
+				"CBSA": "Neither",
+				"Medicare_Payment": "CAH",
+				"Closure_Month": "May",
+				"Closure_Year": 2014,
+				"Number_of_Beds": 16,
+				"Current_Status": "None",
+				"Longitude": -84.058762,
+				"Latitude": 38.314915
+			}
+		},
+		{
+			"type": "Feature",
+			"id": 36,
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					-75.595555,
+					41.480548
+				]
+			},
+			"properties": {
+				"Hospital": "Mid-Valley Hospital",
+				"City": "Peckville",
+				"State": "Pennsylvania",
+				"RUCA": 1,
+				"CBSA": "Metro",
+				"Medicare_Payment": "CAH",
+				"Closure_Month": "June",
+				"Closure_Year": 2014,
+				"Number_of_Beds": 25,
+				"Current_Status": "Urgent Care u0026 Outpatient Ctr",
+				"Longitude": -75.595555,
+				"Latitude": 41.480548
+			}
+		},
+		{
+			"type": "Feature",
+			"id": 37,
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					-76.620252,
+					35.536079
+				]
+			},
+			"properties": {
+				"Hospital": "Vidant Pungo Hospital",
+				"City": "Belhaven",
+				"State": "North Carolina",
+				"RUCA": 10,
+				"CBSA": "Micro",
+				"Medicare_Payment": "CAH",
+				"Closure_Month": "June",
+				"Closure_Year": 2014,
+				"Number_of_Beds": 25,
+				"Current_Status": "None",
+				"Longitude": -76.620252,
+				"Latitude": 35.536079
+			}
+		},
+		{
+			"type": "Feature",
+			"id": 38,
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					-97.837018,
+					42.047013
+				]
+			},
+			"properties": {
+				"Hospital": "Tilden Community Hospital",
+				"City": "Tilden",
+				"State": "Nebraska",
+				"RUCA": 10,
+				"CBSA": "Neither",
+				"Medicare_Payment": "CAH",
+				"Closure_Month": "June",
+				"Closure_Year": 2014,
+				"Number_of_Beds": 20,
+				"Current_Status": "Outpatient Center",
+				"Longitude": -97.837018,
+				"Latitude": 42.047013
+			}
+		},
+		{
+			"type": "Feature",
+			"id": 39,
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					-82.673132,
+					32.183669
+				]
+			},
+			"properties": {
+				"Hospital": "Lower Oconee Community Hospital",
+				"City": "Glenwood",
+				"State": "Georgia",
+				"RUCA": 10,
+				"CBSA": "Neither",
+				"Medicare_Payment": "CAH",
+				"Closure_Month": "June",
+				"Closure_Year": 2014,
+				"Number_of_Beds": 25,
+				"Current_Status": "None",
+				"Longitude": -82.673132,
+				"Latitude": 32.183669
+			}
+		},
+		{
+			"type": "Feature",
+			"id": 40,
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					-89.242299,
+					35.609698
+				]
+			},
+			"properties": {
+				"Hospital": "Haywood Park Community Hospital",
+				"City": "Brownsville",
+				"State": "Tennessee",
+				"RUCA": 7,
+				"CBSA": "Neither",
+				"Medicare_Payment": "MDH",
+				"Closure_Month": "July",
+				"Closure_Year": 2014,
+				"Number_of_Beds": 36,
+				"Current_Status": "None",
+				"Longitude": -89.242299,
+				"Latitude": 35.609698
+			}
+		},
+		{
+			"type": "Feature",
+			"id": 41,
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					-93.689148,
+					38.051551
+				]
+			},
+			"properties": {
+				"Hospital": "Sac-Osage Hospital",
+				"City": "Osceola",
+				"State": "Missouri",
+				"RUCA": 9,
+				"CBSA": "Neither",
+				"Medicare_Payment": "SCH",
+				"Closure_Month": "September",
+				"Closure_Year": 2014,
+				"Number_of_Beds": 47,
+				"Current_Status": "Clinic on hospital grounds will be run by nearby Citizens Mem Hospital as an Outpatient Clinic",
+				"Longitude": -93.689148,
+				"Latitude": 38.051551
+			}
+		},
+		{
+			"type": "Feature",
+			"id": 42,
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					-82.243125,
+					39.463271
+				]
+			},
+			"properties": {
+				"Hospital": "Doctors Hospital of Nelsonville",
+				"City": "Nelsonville",
+				"State": "Ohio",
+				"RUCA": 7,
+				"CBSA": "Micro",
+				"Medicare_Payment": "CAH",
+				"Closure_Month": "October",
+				"Closure_Year": 2014,
+				"Number_of_Beds": 25,
+				"Current_Status": "Outpatient Care Facility u0026 24-hour Emergency Dept",
+				"Longitude": -82.243125,
+				"Latitude": 39.463271
+			}
+		},
+		{
+			"type": "Feature",
+			"id": 43,
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					-94.943527,
+					32.735165
+				]
+			},
+			"properties": {
+				"Hospital": "East Texas Medical Center-Gilmer",
+				"City": "Gilmer",
+				"State": "Texas",
+				"RUCA": 7,
+				"CBSA": "Metro",
+				"Medicare_Payment": "PPS",
+				"Closure_Month": "October",
+				"Closure_Year": 2014,
+				"Number_of_Beds": 37,
+				"Current_Status": "ETMC First Physicians clinic",
+				"Longitude": -94.943527,
+				"Latitude": 32.735165
+			}
+		},
+		{
+			"type": "Feature",
+			"id": 44,
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					-95.09942,
+					33.61197
+				]
+			},
+			"properties": {
+				"Hospital": "East Texas Medical Center- Clarksville",
+				"City": "Clarksville",
+				"State": "Texas",
+				"RUCA": 7,
+				"CBSA": "Neither",
+				"Medicare_Payment": "MDH",
+				"Closure_Month": "December",
+				"Closure_Year": 2014,
+				"Number_of_Beds": 30,
+				"Current_Status": "None",
+				"Longitude": -95.09942,
+				"Latitude": 33.61197
+			}
+		},
+		{
+			"type": "Feature",
+			"id": 45,
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					-95.234766,
+					33.176745
+				]
+			},
+			"properties": {
+				"Hospital": "East Texas Medical Center- Mount Vernon",
+				"City": "Mount Vernon",
+				"State": "Texas",
+				"RUCA": 9,
+				"CBSA": "Neither",
+				"Medicare_Payment": "MDH",
+				"Closure_Month": "December",
+				"Closure_Year": 2014,
+				"Number_of_Beds": 49,
+				"Current_Status": "ETMC First Physicians Clinic",
+				"Longitude": -95.234766,
+				"Latitude": 33.176745
+			}
+		},
+		{
+			"type": "Feature",
+			"id": 46,
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					-95.896056,
+					33.230409
+				]
+			},
+			"properties": {
+				"Hospital": "Hunt Regional Community Hospital of Commerce",
+				"City": "Commerce",
+				"State": "Texas",
+				"RUCA": 7,
+				"CBSA": "Metro",
+				"Medicare_Payment": "CAH",
+				"Closure_Month": "May",
+				"Closure_Year": 2015,
+				"Number_of_Beds": 24,
+				"Current_Status": "None",
+				"Longitude": -95.896056,
+				"Latitude": 33.230409
+			}
+		},
+		{
+			"type": "Feature",
+			"id": 47,
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					-69.968101,
+					43.895387
+				]
+			},
+			"properties": {
+				"Hospital": "Parkview Adventist Medical Center",
+				"City": "Brunswick",
+				"State": "Maine",
+				"RUCA": 4,
+				"CBSA": "Metro",
+				"Medicare_Payment": "PPS",
+				"Closure_Month": "June",
+				"Closure_Year": 2015,
+				"Number_of_Beds": 55,
+				"Current_Status": "Urgent Care Clinic",
+				"Longitude": -69.968101,
+				"Latitude": 43.895387
+			}
+		},
+		{
+			"type": "Feature",
+			"id": 48,
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					-109.595683,
+					31.364151
+				]
+			},
+			"properties": {
+				"Hospital": "Cochise Regional Hospital",
+				"City": "Douglas",
+				"State": "Arizona",
+				"RUCA": 4,
+				"CBSA": "Metro",
+				"Medicare_Payment": "CAH",
+				"Closure_Month": "July",
+				"Closure_Year": 2015,
+				"Number_of_Beds": 25,
+				"Current_Status": "None",
+				"Longitude": -109.595683,
+				"Latitude": 31.364151
+			}
+		},
+		{
+			"type": "Feature",
+			"id": 49,
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					-89.572356,
+					33.441021
+				]
+			},
+			"properties": {
+				"Hospital": "Kilmichael Hospital",
+				"City": "Kilmichael",
+				"State": "Mississippi",
+				"RUCA": 8,
+				"CBSA": "Neither",
+				"Medicare_Payment": "MDH",
+				"Closure_Month": "January",
+				"Closure_Year": 2015,
+				"Number_of_Beds": 19,
+				"Current_Status": "Rural Health Clinic",
+				"Longitude": -89.572356,
+				"Latitude": 33.441021
+			}
+		},
+		{
+			"type": "Feature",
+			"id": 50,
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					-88.895995,
+					36.518753
+				]
+			},
+			"properties": {
+				"Hospital": "Parkway Regional Hospital",
+				"City": "Fulton",
+				"State": "Kentucky",
+				"RUCA": 7,
+				"CBSA": "Micro",
+				"Medicare_Payment": "PPS",
+				"Closure_Month": "March",
+				"Closure_Year": 2015,
+				"Number_of_Beds": 48,
+				"Current_Status": "None",
+				"Longitude": -88.895995,
+				"Latitude": 36.518753
+			}
+		},
+		{
+			"type": "Feature",
+			"id": 51,
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					-85.629768,
+					35.045808
+				]
+			},
+			"properties": {
+				"Hospital": "Parkridge West Hospital",
+				"City": "Jasper",
+				"State": "Tennessee",
+				"RUCA": 7,
+				"CBSA": "Metro",
+				"Medicare_Payment": "PPS",
+				"Closure_Month": "April",
+				"Closure_Year": 2015,
+				"Number_of_Beds": 50,
+				"Current_Status": "24-hour Emergency care",
+				"Longitude": -85.629768,
+				"Latitude": 35.045808
+			}
+		},
+		{
+			"type": "Feature",
+			"id": 52,
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					-79.698594,
+					34.635035
+				]
+			},
+			"properties": {
+				"Hospital": "Marlboro Park Hospital",
+				"City": "Bennettsville",
+				"State": "South Carolina",
+				"RUCA": 4,
+				"CBSA": "Micro",
+				"Medicare_Payment": "PPS",
+				"Closure_Month": "April",
+				"Closure_Year": 2015,
+				"Number_of_Beds": 94,
+				"Current_Status": "None",
+				"Longitude": -79.698594,
+				"Latitude": 34.635035
+			}
+		},
+		{
+			"type": "Feature",
+			"id": 53,
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					-80.670663,
+					36.134563
+				]
+			},
+			"properties": {
+				"Hospital": "Yadkin Valley Community Hospital",
+				"City": "Yadkinville",
+				"State": "North Carolina",
+				"RUCA": 2,
+				"CBSA": "Metro",
+				"Medicare_Payment": "CAH",
+				"Closure_Month": "May",
+				"Closure_Year": 2015,
+				"Number_of_Beds": 15,
+				"Current_Status": "None",
+				"Longitude": -80.670663,
+				"Latitude": 36.134563
+			}
+		},
+		{
+			"type": "Feature",
+			"id": 54,
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					-117.238051,
+					38.072752
+				]
+			},
+			"properties": {
+				"Hospital": "Nye Regional Medical Center",
+				"City": "Tonopah",
+				"State": "Nevada",
+				"RUCA": 5,
+				"CBSA": "Micro",
+				"Medicare_Payment": "SCH",
+				"Closure_Month": "August",
+				"Closure_Year": 2015,
+				"Number_of_Beds": 10,
+				"Current_Status": "None",
+				"Longitude": -117.238051,
+				"Latitude": 38.072752
+			}
+		},
+		{
+			"type": "Feature",
+			"id": 55,
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					-95.716941,
+					37.225016
+				]
+			},
+			"properties": {
+				"Hospital": "Mercy Hospital Independence",
+				"City": "Independence",
+				"State": "Kansas",
+				"RUCA": 7,
+				"CBSA": "Micro",
+				"Medicare_Payment": "PPS",
+				"Closure_Month": "October",
+				"Closure_Year": 2015,
+				"Number_of_Beds": 41,
+				"Current_Status": "Outpatient clinic in old hospital building and ER department 2 miles away",
+				"Longitude": -95.716941,
+				"Latitude": 37.225016
+			}
+		},
+		{
+			"type": "Feature",
+			"id": 56,
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					-70.767535,
+					43.447447
+				]
+			},
+			"properties": {
+				"Hospital": "Southern Maine Healthcare- Sanford",
+				"City": "Sanford",
+				"State": "Maine",
+				"RUCA": 4,
+				"CBSA": "Metro",
+				"Medicare_Payment": "PPS",
+				"Closure_Month": "October",
+				"Closure_Year": 2015,
+				"Number_of_Beds": 46,
+				"Current_Status": "24-hour ER, diagnostic, and outpatient services",
+				"Longitude": -70.767535,
+				"Latitude": 43.447447
+			}
+		},
+		{
+			"type": "Feature",
+			"id": 57,
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					-91.388535,
+					31.527886
+				]
+			},
+			"properties": {
+				"Hospital": "Merit Health Natchez-Community Campus",
+				"City": "Natchez",
+				"State": "Mississippi",
+				"RUCA": 4,
+				"CBSA": "Micro",
+				"Medicare_Payment": "PPS",
+				"Closure_Month": "November",
+				"Closure_Year": 2015,
+				"Number_of_Beds": 101,
+				"Current_Status": "None",
+				"Longitude": -91.388535,
+				"Latitude": 31.527886
+			}
+		},
+		{
+			"type": "Feature",
+			"id": 58,
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					-89.128059,
+					32.357455
+				]
+			},
+			"properties": {
+				"Hospital": "Pioneer Community Hospital",
+				"City": "Newton",
+				"State": "Mississippi",
+				"RUCA": 7,
+				"CBSA": "Neither",
+				"Medicare_Payment": "CAH",
+				"Closure_Month": "December",
+				"Closure_Year": 2015,
+				"Number_of_Beds": 21,
+				"Current_Status": "None",
+				"Longitude": -89.128059,
+				"Latitude": 32.357455
+			}
+		},
+		{
+			"type": "Feature",
+			"id": 59,
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					-86.084001,
+					35.468716
+				]
+			},
+			"properties": {
+				"Hospital": "United Regional Medical Center",
+				"City": "Manchester",
+				"State": "Tenessee",
+				"RUCA": 4,
+				"CBSA": "Micro",
+				"Medicare_Payment": "PPS",
+				"Closure_Month": "July",
+				"Closure_Year": 2015,
+				"Number_of_Beds": 53,
+				"Current_Status": "None",
+				"Longitude": -86.084001,
+				"Latitude": 35.468716
+			}
+		},
+		{
+			"type": "Feature",
+			"id": 60,
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					-90.440374,
+					37.800111
+				]
+			},
+			"properties": {
+				"Hospital": "Parkland Health Center- Weber Rd",
+				"City": "Farmington",
+				"State": "Missouri",
+				"RUCA": 4,
+				"CBSA": "Micro",
+				"Medicare_Payment": "RRC",
+				"Closure_Month": "August",
+				"Closure_Year": 2015,
+				"Number_of_Beds": 98,
+				"Current_Status": "None",
+				"Longitude": -90.440374,
+				"Latitude": 37.800111
+			}
+		},
+		{
+			"type": "Feature",
+			"id": 61,
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					-94.567536,
+					45.639153
+				]
+			},
+			"properties": {
+				"Hospital": "Albany Area Hospital",
+				"City": "Albany",
+				"State": "Minnesota",
+				"RUCA": 2,
+				"CBSA": "Metro",
+				"Medicare_Payment": "CAH",
+				"Closure_Month": "December",
+				"Closure_Year": 2015,
+				"Number_of_Beds": 17,
+				"Current_Status": "None",
+				"Longitude": -94.567536,
+				"Latitude": 45.639153
+			}
+		},
+		{
+			"type": "Feature",
+			"id": 62,
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					-88.835306,
+					41.114278
+				]
+			},
+			"properties": {
+				"Hospital": "St. Maryu0027s Hospital",
+				"City": "Streator",
+				"State": "Illinois",
+				"RUCA": 4,
+				"CBSA": "Micro",
+				"Medicare_Payment": "PPS",
+				"Closure_Month": "January",
+				"Closure_Year": 2016,
+				"Number_of_Beds": 94,
+				"Current_Status": "24-hr urgent care and outpatient services",
+				"Longitude": -88.835306,
+				"Latitude": 41.114278
+			}
+		},
+		{
+			"type": "Feature",
+			"id": 63,
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					-81.362605,
+					33.256439
+				]
+			},
+			"properties": {
+				"Hospital": "Southern Palmetto Hospital",
+				"City": "Barnwell",
+				"State": "South Carolina",
+				"RUCA": 7,
+				"CBSA": "Neither",
+				"Medicare_Payment": "SCH",
+				"Closure_Month": "January",
+				"Closure_Year": 2016,
+				"Number_of_Beds": 30,
+				"Current_Status": "None",
+				"Longitude": -81.362605,
+				"Latitude": 33.256439
+			}
+		},
+		{
+			"type": "Feature",
+			"id": 64,
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					-85.29359,
+					37.094129
+				]
+			},
+			"properties": {
+				"Hospital": "Westlake Regional Hospital",
+				"City": "Columbia",
+				"State": "Kentucky",
+				"RUCA": 7,
+				"CBSA": "Neither",
+				"Medicare_Payment": "MDH",
+				"Closure_Month": "February",
+				"Closure_Year": 2016,
+				"Number_of_Beds": 49,
+				"Current_Status": "Emergency department, outpatient services, primary care clinics. Renamed TJ Health Columbia",
+				"Longitude": -85.29359,
+				"Latitude": 37.094129
+			}
+		},
+		{
+			"type": "Feature",
+			"id": 65,
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					-84.840936,
+					38.541559
+				]
+			},
+			"properties": {
+				"Hospital": "New Horizons Medical Center",
+				"City": "Owenton",
+				"State": "Kentucky",
+				"RUCA": 10,
+				"CBSA": "Neither",
+				"Medicare_Payment": "CAH",
+				"Closure_Month": "Februrary",
+				"Closure_Year": 2016,
+				"Number_of_Beds": 25,
+				"Current_Status": "Radiology and labs",
+				"Longitude": -84.840936,
+				"Latitude": 38.541559
+			}
+		},
+		{
+			"type": "Feature",
+			"id": 66,
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					-90.955091,
+					37.187241
+				]
+			},
+			"properties": {
+				"Hospital": "SoutheastHEALTH Center of Reynolds County",
+				"City": "Ellington",
+				"State": "Missouri",
+				"RUCA": 2,
+				"CBSA": "Neither",
+				"Medicare_Payment": "CAH",
+				"Closure_Month": "March",
+				"Closure_Year": 2016,
+				"Number_of_Beds": 21,
+				"Current_Status": "None",
+				"Longitude": -90.955091,
+				"Latitude": 37.187241
+			}
+		},
+		{
+			"type": "Feature",
+			"id": 67,
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					-99.014438,
+					34.403302
+				]
+			},
+			"properties": {
+				"Hospital": "Memorial Hospital and Physician Group ",
+				"City": "Frederick",
+				"State": "Oklahoma",
+				"RUCA": 7,
+				"CBSA": "Neither",
+				"Medicare_Payment": "SCH",
+				"Closure_Month": "March",
+				"Closure_Year": 2016,
+				"Number_of_Beds": 37,
+				"Current_Status": "Outpatient services, laboratory, physical therapy, nursing home",
+				"Longitude": -99.014438,
+				"Latitude": 34.403302
+			}
+		},
+		{
+			"type": "Feature",
+			"id": 68,
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					-122.000901,
+					39.206423
+				]
+			},
+			"properties": {
+				"Hospital": "Colusa Regional Medical Center",
+				"City": "Colusa",
+				"State": "California",
+				"RUCA": 7,
+				"CBSA": "Neither",
+				"Medicare_Payment": "SCH",
+				"Closure_Month": "April",
+				"Closure_Year": 2016,
+				"Number_of_Beds": 42,
+				"Current_Status": "None",
+				"Longitude": -122.000901,
+				"Latitude": 39.206423
+			}
+		},
+		{
+			"type": "Feature",
+			"id": 69,
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					-88.575877,
+					35.161391
+				]
+			},
+			"properties": {
+				"Hospital": "Tennoval Healthcare- McNairy Regional",
+				"City": "Selmer",
+				"State": "Tennessee",
+				"RUCA": 7,
+				"CBSA": "Neither",
+				"Medicare_Payment": "MDH",
+				"Closure_Month": "May",
+				"Closure_Year": 2016,
+				"Number_of_Beds": 26,
+				"Current_Status": "None",
+				"Longitude": -88.575877,
+				"Latitude": 35.161391
+			}
+		},
+		{
+			"type": "Feature",
+			"id": 70,
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					-95.591861,
+					35.310913
+				]
+			},
+			"properties": {
+				"Hospital": "Epic Medical Center",
+				"City": "Eufaula",
+				"State": "Oklahoma",
+				"RUCA": 10,
+				"CBSA": "Neither",
+				"Medicare_Payment": "MDH",
+				"Closure_Month": "May",
+				"Closure_Year": 2016,
+				"Number_of_Beds": 33,
+				"Current_Status": "Urgent care center ",
+				"Longitude": -95.591861,
+				"Latitude": 35.310913
+			}
+		},
+		{
+			"type": "Feature",
+			"id": 71,
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					-84.492747,
+					34.680095
+				]
+			},
+			"properties": {
+				"Hospital": "North Georgia Medical Center",
+				"City": "Ellijay",
+				"State": "Georgia",
+				"RUCA": 7,
+				"CBSA": "Neither",
+				"Medicare_Payment": "PPS",
+				"Closure_Month": "June",
+				"Closure_Year": 2016,
+				"Number_of_Beds": 40,
+				"Current_Status": "None",
+				"Longitude": -84.492747,
+				"Latitude": 34.680095
+			}
+		},
+		{
+			"type": "Feature",
+			"id": 72,
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					-90.277558,
+					34.247057
+				]
+			},
+			"properties": {
+				"Hospital": "Quitman County Hospital",
+				"City": "Marks",
+				"State": "Mississippi",
+				"RUCA": 10,
+				"CBSA": "Neither",
+				"Medicare_Payment": "CAH",
+				"Closure_Month": "September",
+				"Closure_Year": 2016,
+				"Number_of_Beds": 25,
+				"Current_Status": "None",
+				"Longitude": -90.277558,
+				"Latitude": 34.247057
+			}
+		},
+		{
+			"type": "Feature",
+			"id": 73,
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					-99.172759,
+					28.670704
+				]
+			},
+			"properties": {
+				"Hospital": "Nix Coummunity General Hospital",
+				"City": "Dilley",
+				"State": "Texas",
+				"RUCA": 7,
+				"CBSA": "Neither",
+				"Medicare_Payment": "PPS",
+				"Closure_Month": "September",
+				"Closure_Year": 2016,
+				"Number_of_Beds": 18,
+				"Current_Status": "None",
+				"Longitude": -99.172759,
+				"Latitude": 28.670704
+			}
+		},
+		{
+			"type": "Feature",
+			"id": 74,
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					-96.20503,
+					29.235593
+				]
+			},
+			"properties": {
+				"Hospital": "Gulf Coast Medical Center",
+				"City": "Wharton",
+				"State": "Texas",
+				"RUCA": 7,
+				"CBSA": "Micro",
+				"Medicare_Payment": "PPS",
+				"Closure_Month": "November",
+				"Closure_Year": 2016,
+				"Number_of_Beds": 94,
+				"Current_Status": "None",
+				"Longitude": -96.20503,
+				"Latitude": 29.235593
+			}
+		},
+		{
+			"type": "Feature",
+			"id": 75,
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					-80.572005,
+					35.899528
+				]
+			},
+			"properties": {
+				"Hospital": "Davie Medical Center- Mocksville",
+				"City": "Mocksville",
+				"State": "North Carolina",
+				"RUCA": 7,
+				"CBSA": "Metro",
+				"Medicare_Payment": "PPS",
+				"Closure_Month": "March",
+				"Closure_Year": 2017,
+				"Number_of_Beds": 10,
+				"Current_Status": "None",
+				"Longitude": -80.572005,
+				"Latitude": 35.899528
+			}
+		},
+		{
+			"type": "Feature",
+			"id": 76,
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					-84.385485,
+					35.02698
+				]
+			},
+			"properties": {
+				"Hospital": "Copper Basin Medical Center",
+				"City": "Copperhill",
+				"State": "Tennessee",
+				"RUCA": 10,
+				"CBSA": "Metro",
+				"Medicare_Payment": "CAH",
+				"Closure_Month": "May",
+				"Closure_Year": 2017,
+				"Number_of_Beds": 21,
+				"Current_Status": "Closed the inpatient but the emergency room remains",
+				"Longitude": -84.385485,
+				"Latitude": 35.02698
+			}
+		},
+		{
+			"type": "Feature",
+			"id": 77,
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					-95.438911,
+					31.307171
+				]
+			},
+			"properties": {
+				"Hospital": "Timberlands Hospital",
+				"City": "Crockett",
+				"State": "Texas",
+				"RUCA": 8,
+				"CBSA": "Neither",
+				"Medicare_Payment": "SCH",
+				"Closure_Month": "June",
+				"Closure_Year": 2017,
+				"Number_of_Beds": 49,
+				"Current_Status": "Dental and podiatry private practice",
+				"Longitude": -95.438911,
+				"Latitude": 31.307171
+			}
+		},
+		{
+			"type": "Feature",
+			"id": 78,
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					-85.506581,
+					30.963259
+				]
+			},
+			"properties": {
+				"Hospital": "Campbellton-Graceville Hospital",
+				"City": "Graceville",
+				"State": "Florida",
+				"RUCA": 7,
+				"CBSA": "Neither",
+				"Medicare_Payment": "CAH",
+				"Closure_Month": "June",
+				"Closure_Year": 2017,
+				"Number_of_Beds": 25,
+				"Current_Status": "None",
+				"Longitude": -85.506581,
+				"Latitude": 30.963259
+			}
+		},
+		{
+			"type": "Feature",
+			"id": 79,
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					-95.380952,
+					30.956879
+				]
+			},
+			"properties": {
+				"Hospital": "East Texas Medical Center- Trinity",
+				"City": "Trinity",
+				"State": "Texas",
+				"RUCA": 7,
+				"CBSA": "Micro",
+				"Medicare_Payment": "MDH",
+				"Closure_Month": "August",
+				"Closure_Year": 2017,
+				"Number_of_Beds": 45,
+				"Current_Status": "None",
+				"Longitude": -95.380952,
+				"Latitude": 30.956879
+			}
+		},
+		{
+			"type": "Feature",
+			"id": 80,
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					-97.162406,
+					27.915146
+				]
+			},
+			"properties": {
+				"Hospital": "Care Regional Medical Center",
+				"City": "Aransas Pass",
+				"State": "Texas",
+				"RUCA": 4,
+				"CBSA": "Metro",
+				"Medicare_Payment": "PPS",
+				"Closure_Month": "August",
+				"Closure_Year": 2017,
+				"Number_of_Beds": 63,
+				"Current_Status": "None",
+				"Longitude": -97.162406,
+				"Latitude": 27.915146
+			}
+		},
+		{
+			"type": "Feature",
+			"id": 81,
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					-80.2547455,
+					36.6461356
+				]
+			},
+			"properties": {
+				"Hospital": "Pioneer Community Hospital of Patrick",
+				"City": "Stuart",
+				"State": "VA",
+				"RUCA": 6,
+				"CBSA": "Neither",
+				"Medicare_Payment": "CAH",
+				"Closure_Month": "September",
+				"Closure_Year": 2017,
+				"Number_of_Beds": 25,
+				"Current_Status": "None",
+				"Longitude": -80.2547455,
+				"Latitude": 36.6461356
+			}
+		},
+		{
+			"type": "Feature",
+			"id": 82,
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					-77.429115,
+					36.132334
+				]
+			},
+			"properties": {
+				"Hospital": "Our Community Hospital",
+				"City": "Scotland Neck",
+				"State": "North Carolina",
+				"RUCA": 10,
+				"CBSA": "Micro",
+				"Medicare_Payment": "CAH",
+				"Closure_Month": "December",
+				"Closure_Year": 2017,
+				"Number_of_Beds": 20,
+				"Current_Status": "None",
+				"Longitude": -77.429115,
+				"Latitude": 36.132334
+			}
+		},
+		{
+			"type": "Feature",
+			"id": 83,
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					-93.686371,
+					34.070361
+				]
+			},
+			"properties": {
+				"Hospital": "Pike County Hospital",
+				"City": "Murfreesboro",
+				"State": "AR",
+				"RUCA": "10",
+				"CBSA": "Neither",
+				"Medicare_Payment": "MDH",
+				"Closure_Month": "November",
+				"Closure_Year": 2009,
+				"Current_Status": "unknown",
+				"Number_of_Beds": 32,
+				"Longitude": -93.686371,
+				"Latitude": 34.070361
+			}
+		},
+		{
+			"type": "Feature",
+			"id": 84,
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					-122.363939,
+					38.394394
+				]
+			},
+			"properties": {
+				"Hospital": "N M  Holderman Memorial Hospital",
+				"City": "Yountville",
+				"State": "CA",
+				"RUCA": "7.1",
+				"CBSA": "Metro",
+				"Medicare_Payment": "PPS",
+				"Closure_Month": "August",
+				"Closure_Year": 2009,
+				"Number_of_Beds": 20,
+				"Current_Status": "Skilled Nursing Facility",
+				"Longitude": -122.363939,
+				"Latitude": 38.394394
+			}
+		},
+		{
+			"type": "Feature",
+			"id": 85,
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					-86.843351,
+					34.151071
+				]
+			},
+			"properties": {
+				"Hospital": "Woodland Medical Ctr",
+				"City": "Cullman",
+				"State": "AL",
+				"RUCA": "4",
+				"CBSA": "Micro",
+				"Medicare_Payment": "MDH",
+				"Closure_Month": "July",
+				"Closure_Year": 2009,
+				"Current_Status": "unknown",
+				"Number_of_Beds": 50,
+				"Longitude": -86.843351,
+				"Latitude": 34.151071
+			}
+		},
+		{
+			"type": "Feature",
+			"id": 86,
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					-74.186271,
+					42.961199
+				]
+			},
+			"properties": {
+				"Hospital": "Amsterdam Memorial Hospital",
+				"City": "Amsterdam",
+				"State": "NY",
+				"RUCA": "2",
+				"CBSA": "Micro",
+				"Medicare_Payment": "PPS",
+				"Closure_Month": "June",
+				"Closure_Year": 2009,
+				"Number_of_Beds": 24,
+				"Current_Status": "Outpatient Clinic",
+				"Longitude": -74.186271,
+				"Latitude": 42.961199
+			}
+		},
+		{
+			"type": "Feature",
+			"id": 87,
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					-82.647058,
+					37.187384
+				]
+			},
+			"properties": {
+				"Hospital": "Jenkins Community Hospital",
+				"City": "Jenkins",
+				"State": "KY",
+				"RUCA": "5",
+				"CBSA": "Neither",
+				"Medicare_Payment": "CAH",
+				"Closure_Month": "May",
+				"Closure_Year": 2009,
+				"Number_of_Beds": 25,
+				"Current_Status": "Primary Care Clinic",
+				"Longitude": -82.647058,
+				"Latitude": 37.187384
+			}
+		},
+		{
+			"type": "Feature",
+			"id": 88,
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					-92.078791,
+					30.477914
+				]
+			},
+			"properties": {
+				"Hospital": "Doctors Hospital Of Opelousas",
+				"City": "Opelousas",
+				"State": "LA",
+				"RUCA": "2",
+				"CBSA": "Micro",
+				"Medicare_Payment": "PPS",
+				"Closure_Month": "April",
+				"Closure_Year": 2009,
+				"Number_of_Beds": 117,
+				"Current_Status": "Long term care unit, emergency department and psychiatric center",
+				"Longitude": -92.078791,
+				"Latitude": 30.477914
+			}
+		},
+		{
+			"type": "Feature",
+			"id": 89,
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					-102.316757,
+					46.887895
+				]
+			},
+			"properties": {
+				"Hospital": "Richardton Health Center",
+				"City": "Richardton",
+				"State": "ND",
+				"RUCA": "10",
+				"CBSA": "Micro",
+				"Medicare_Payment": "CAH",
+				"Closure_Month": "April",
+				"Closure_Year": 2009,
+				"Number_of_Beds": 25,
+				"Current_Status": "Nursing Home",
+				"Longitude": -102.316757,
+				"Latitude": 46.887895
+			}
+		},
+		{
+			"type": "Feature",
+			"id": 90,
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					-76.405843,
+					43.314818
+				]
+			},
+			"properties": {
+				"Hospital": "Albert Lindley Lee Memorial Hospital",
+				"City": "Fulton",
+				"State": "NY",
+				"RUCA": "4.1",
+				"CBSA": "Metro",
+				"Medicare_Payment": "PPS",
+				"Closure_Month": "April",
+				"Closure_Year": 2009,
+				"Number_of_Beds": 67,
+				"Current_Status": "Urgent care center, imaging lab and occupational/physical therapy",
+				"Longitude": -76.405843,
+				"Latitude": 43.314818
+			}
+		},
+		{
+			"type": "Feature",
+			"id": 91,
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					-74.771451,
+					39.631801
+				]
+			},
+			"properties": {
+				"Hospital": "Wm B Kessler Memorial Hospital",
+				"City": "Hammonton",
+				"State": "NJ",
+				"RUCA": "4.1",
+				"CBSA": "Metro",
+				"Medicare_Payment": "PPS",
+				"Closure_Month": "March",
+				"Closure_Year": 2009,
+				"Number_of_Beds": 83,
+				"Current_Status": "None",
+				"Longitude": -74.771451,
+				"Latitude": 39.631801
+			}
+		},
+		{
+			"type": "Feature",
+			"id": 92,
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					-82.951783,
+					30.522129
+				]
+			},
+			"properties": {
+				"Hospital": "Trinity Community Hospital",
+				"City": "Jasper",
+				"State": "FL",
+				"RUCA": "7.1",
+				"CBSA": "Neither",
+				"Medicare_Payment": "PPS",
+				"Closure_Month": "August",
+				"Closure_Year": 2008,
+				"Number_of_Beds": 42,
+				"Current_Status": "None",
+				"Longitude": -82.951783,
+				"Latitude": 30.522129
+			}
+		},
+		{
+			"type": "Feature",
+			"id": 93,
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					-93.992273,
+					30.907403
+				]
+			},
+			"properties": {
+				"Hospital": "Dickerson Memorial Hospital",
+				"City": "Jasper",
+				"State": "TX",
+				"RUCA": "7",
+				"CBSA": "Neither",
+				"Medicare_Payment": "PPS",
+				"Closure_Month": "July",
+				"Closure_Year": 2008,
+				"Current_Status": "unknown",
+				"Number_of_Beds": 24,
+				"Longitude": -93.992273,
+				"Latitude": 30.907403
+			}
+		},
+		{
+			"type": "Feature",
+			"id": 94,
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					-80.54408,
+					38.220431
+				]
+			},
+			"properties": {
+				"Hospital": "Richwood Area Community Hospital",
+				"City": "Richwood",
+				"State": "WV",
+				"RUCA": "8.1",
+				"CBSA": "Neither",
+				"Medicare_Payment": "CAH",
+				"Closure_Month": "June",
+				"Closure_Year": 2008,
+				"Current_Status": "unknown",
+				"Number_of_Beds": 25,
+				"Longitude": -80.54408,
+				"Latitude": 38.220431
+			}
+		},
+		{
+			"type": "Feature",
+			"id": 95,
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					-120.936287,
+					40.140239
+				]
+			},
+			"properties": {
+				"Hospital": "Indian Valley Hospital",
+				"City": "Greenville",
+				"State": "CA",
+				"RUCA": "8",
+				"CBSA": "Neither",
+				"Medicare_Payment": "SCH",
+				"Closure_Month": "April",
+				"Closure_Year": 2008,
+				"Number_of_Beds": 26,
+				"Current_Status": "None",
+				"Longitude": -120.936287,
+				"Latitude": 40.140239
+			}
+		},
+		{
+			"type": "Feature",
+			"id": 96,
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					-82.8853,
+					32.0393
+				]
+			},
+			"properties": {
+				"Hospital": "Taylor Telfair Regional Hospital",
+				"City": "McRae",
+				"State": "GA",
+				"RUCA": "7",
+				"CBSA": "Neither",
+				"Medicare_Payment": "CAH",
+				"Closure_Month": "April",
+				"Closure_Year": 2008,
+				"Current_Status": "unknown",
+				"Number_of_Beds": 15,
+				"Longitude": -82.8853,
+				"Latitude": 32.0393
+			}
+		},
+		{
+			"type": "Feature",
+			"id": 97,
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					-117.461362,
+					47.950809
+				]
+			},
+			"properties": {
+				"Hospital": "Deer Park Hospital",
+				"City": "Deer Park",
+				"State": "WA",
+				"RUCA": "2 ",
+				"CBSA": "Metro",
+				"Medicare_Payment": "CAH",
+				"Closure_Month": "March",
+				"Closure_Year": 2008,
+				"Current_Status": "unknown",
+				"Number_of_Beds": 25,
+				"Longitude": -117.461362,
+				"Latitude": 47.950809
+			}
+		},
+		{
+			"type": "Feature",
+			"id": 98,
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					-102.167999,
+					45.940809
+				]
+			},
+			"properties": {
+				"Hospital": "Five Counties Hospital - Critical Access Hospital",
+				"City": "Lemmon",
+				"State": "SD",
+				"RUCA": "10",
+				"CBSA": "Neither",
+				"Medicare_Payment": "CAH",
+				"Closure_Month": "October",
+				"Closure_Year": 2007,
+				"Number_of_Beds": 4,
+				"Current_Status": "Nursing home",
+				"Longitude": -102.167999,
+				"Latitude": 45.940809
+			}
+		},
+		{
+			"type": "Feature",
+			"id": 99,
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					-96.800077,
+					36.329118
+				]
+			},
+			"properties": {
+				"Hospital": "Pawnee Municipal Hospital",
+				"City": "Pawnee",
+				"State": "OK",
+				"RUCA": "10",
+				"CBSA": "Metro",
+				"Medicare_Payment": "PPS",
+				"Closure_Month": "August",
+				"Closure_Year": 2007,
+				"Current_Status": "unknown",
+				"Number_of_Beds": 25,
+				"Longitude": -96.800077,
+				"Latitude": 36.329118
+			}
+		},
+		{
+			"type": "Feature",
+			"id": 100,
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					-120.378186,
+					37.974579
+				]
+			},
+			"properties": {
+				"Hospital": "Tuolumne General Hosp",
+				"City": "Sonora",
+				"State": "CA",
+				"RUCA": "4",
+				"CBSA": "Micro",
+				"Medicare_Payment": "PPS",
+				"Closure_Month": "June",
+				"Closure_Year": 2007,
+				"Current_Status": "unknown",
+				"Number_of_Beds": 80,
+				"Longitude": -120.378186,
+				"Latitude": 37.974579
+			}
+		},
+		{
+			"type": "Feature",
+			"id": 101,
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					-81.228337,
+					37.24359
+				]
+			},
+			"properties": {
+				"Hospital": "St Lukes Hospital",
+				"City": "Bluefield",
+				"State": "WV",
+				"RUCA": "4",
+				"CBSA": "Micro",
+				"Medicare_Payment": "MDH",
+				"Closure_Month": "May",
+				"Closure_Year": 2007,
+				"Number_of_Beds": 79,
+				"Current_Status": "Behavioral health center",
+				"Longitude": -81.228337,
+				"Latitude": 37.24359
+			}
+		},
+		{
+			"type": "Feature",
+			"id": 102,
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					-96.2068,
+					44.5306
+				]
+			},
+			"properties": {
+				"Hospital": "Divine Providence Health Center",
+				"City": "Ivanhoe",
+				"State": "MN",
+				"RUCA": "10",
+				"CBSA": "Neither",
+				"Medicare_Payment": "CAH",
+				"Closure_Month": "March",
+				"Closure_Year": 2007,
+				"Number_of_Beds": 18,
+				"Current_Status": "Skilled Nursing Facility",
+				"Longitude": -96.2068,
+				"Latitude": 44.5306
+			}
+		},
+		{
+			"type": "Feature",
+			"id": 103,
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					-81.178043,
+					35.917035
+				]
+			},
+			"properties": {
+				"Hospital": "Frye Regional Medical Center Alexander Campus",
+				"City": "Taylorsville",
+				"State": "NC",
+				"RUCA": "2",
+				"CBSA": "Metro",
+				"Medicare_Payment": "CAH",
+				"Closure_Month": "February",
+				"Closure_Year": 2007,
+				"Current_Status": "unknown",
+				"Number_of_Beds": 23,
+				"Longitude": -81.178043,
+				"Latitude": 35.917035
+			}
+		},
+		{
+			"type": "Feature",
+			"id": 104,
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					-86.956335,
+					38.314018
+				]
+			},
+			"properties": {
+				"Hospital": "St Josephu0027s Hospital Of Huntingburg, Inc",
+				"City": "Huntingburg",
+				"State": "IN",
+				"RUCA": "5",
+				"CBSA": "Micro",
+				"Medicare_Payment": "CAH",
+				"Closure_Month": "January",
+				"Closure_Year": 2007,
+				"Current_Status": "unknown",
+				"Number_of_Beds": 25,
+				"Longitude": -86.956335,
+				"Latitude": 38.314018
+			}
+		},
+		{
+			"type": "Feature",
+			"id": 105,
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					-81.992952,
+					37.849549
+				]
+			},
+			"properties": {
+				"Hospital": "Guyan Valley Hospital",
+				"City": "Logan",
+				"State": "WV",
+				"RUCA": "2",
+				"CBSA": "Micro",
+				"Medicare_Payment": "CAH",
+				"Closure_Month": "December",
+				"Closure_Year": 2006,
+				"Current_Status": "unknown",
+				"Number_of_Beds": 8,
+				"Longitude": -81.992952,
+				"Latitude": 37.849549
+			}
+		},
+		{
+			"type": "Feature",
+			"id": 106,
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					-85.620487,
+					45.126942
+				]
+			},
+			"properties": {
+				"Hospital": "Leelanau Memorial Health Center",
+				"City": "Northport",
+				"State": "MI",
+				"RUCA": "10",
+				"CBSA": "Micro",
+				"Medicare_Payment": "CAH",
+				"Closure_Month": "September",
+				"Closure_Year": 2006,
+				"Number_of_Beds": 23,
+				"Current_Status": "Long-term care unit, fitness center, a rural health clinic, and 24-hour emergency services.",
+				"Longitude": -85.620487,
+				"Latitude": 45.126942
+			}
+		},
+		{
+			"type": "Feature",
+			"id": 107,
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					-82.290175,
+					35.911266
+				]
+			},
+			"properties": {
+				"Hospital": "Mission Family Health Center (Yancey Community Medical Center)",
+				"City": "Burnsville",
+				"State": "NC",
+				"RUCA": "2",
+				"CBSA": "Neither",
+				"Medicare_Payment": "CAH",
+				"Closure_Month": "September",
+				"Closure_Year": 2006,
+				"Number_of_Beds": 6,
+				"Current_Status": "None",
+				"Longitude": -82.290175,
+				"Latitude": 35.911266
+			}
+		},
+		{
+			"type": "Feature",
+			"id": 108,
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					-96.497352,
+					37.104011
+				]
+			},
+			"properties": {
+				"Hospital": "Cedar Vale Community Hospital",
+				"City": "Cedar Vale",
+				"State": "KS",
+				"RUCA": "10",
+				"CBSA": "Neither",
+				"Medicare_Payment": "CAH",
+				"Closure_Month": "August",
+				"Closure_Year": 2006,
+				"Number_of_Beds": 25,
+				"Current_Status": "None",
+				"Longitude": -96.497352,
+				"Latitude": 37.104011
+			}
+		},
+		{
+			"type": "Feature",
+			"id": 109,
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					-120.273313,
+					37.120984
+				]
+			},
+			"properties": {
+				"Hospital": "Chowchilla District Mem Hospital",
+				"City": "Chowchilla",
+				"State": "CA",
+				"RUCA": "4",
+				"CBSA": "Metro",
+				"Medicare_Payment": "PPS",
+				"Closure_Month": "June",
+				"Closure_Year": 2006,
+				"Number_of_Beds": 24,
+				"Current_Status": "Skilled Nursing Facility",
+				"Longitude": -120.273313,
+				"Latitude": 37.120984
+			}
+		},
+		{
+			"type": "Feature",
+			"id": 110,
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					-120.629376,
+					36.986791
+				]
+			},
+			"properties": {
+				"Hospital": "Dos Palos Memorial Hospital",
+				"City": "Dos Palos",
+				"State": "CA",
+				"RUCA": "7.2",
+				"CBSA": "Metro",
+				"Medicare_Payment": "PPS",
+				"Closure_Month": "June",
+				"Closure_Year": 2006,
+				"Number_of_Beds": 17,
+				"Current_Status": "Rural Health Clinic and Skilled Nursing Facility",
+				"Longitude": -120.629376,
+				"Latitude": 36.986791
+			}
+		},
+		{
+			"type": "Feature",
+			"id": 111,
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					-78.670853,
+					35.32701
+				]
+			},
+			"properties": {
+				"Hospital": "Good Hope Hospital",
+				"City": "Erwin",
+				"State": "NC",
+				"RUCA": "4.3",
+				"CBSA": "Micro",
+				"Medicare_Payment": "PPS",
+				"Closure_Month": "April",
+				"Closure_Year": 2006,
+				"Current_Status": "unknown",
+				"Number_of_Beds": 43,
+				"Longitude": -78.670853,
+				"Latitude": 35.32701
+			}
+		},
+		{
+			"type": "Feature",
+			"id": 112,
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					-78.209498,
+					40.90521
+				]
+			},
+			"properties": {
+				"Hospital": "Philipsburg Area Hospital",
+				"City": "Philipsburg",
+				"State": "PA",
+				"RUCA": "2",
+				"CBSA": "Metro",
+				"Medicare_Payment": "CAH",
+				"Closure_Month": "April",
+				"Closure_Year": 2006,
+				"Number_of_Beds": 25,
+				"Current_Status": "None",
+				"Longitude": -78.209498,
+				"Latitude": 40.90521
+			}
+		},
+		{
+			"type": "Feature",
+			"id": 113,
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					-88.165443,
+					38.083515
+				]
+			},
+			"properties": {
+				"Hospital": "Cornerstone Healthcare Of Illinois",
+				"City": "Carmi",
+				"State": "IL",
+				"RUCA": "7",
+				"CBSA": "Neither",
+				"Medicare_Payment": "CAH",
+				"Closure_Month": "December",
+				"Closure_Year": 2005,
+				"Number_of_Beds": 25,
+				"Current_Status": "Nursing Facility",
+				"Longitude": -88.165443,
+				"Latitude": 38.083515
+			}
+		},
+		{
+			"type": "Feature",
+			"id": 114,
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					-84.547667,
+					30.569255
+				]
+			},
+			"properties": {
+				"Hospital": "Gadsden Community Hospital",
+				"City": "Quincy",
+				"State": "FL",
+				"RUCA": "2 ",
+				"CBSA": " Metro",
+				"Medicare_Payment": "CAH",
+				"Closure_Month": "November",
+				"Closure_Year": 2005,
+				"Number_of_Beds": 25,
+				"Current_Status": "Emergency Room Center renamed as CRMC-Gadsden Memorial Campus",
+				"Longitude": -84.547667,
+				"Latitude": 30.569255
+			}
+		},
+		{
+			"type": "Feature",
+			"id": 115,
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					-91.257283,
+					35.608182
+				]
+			},
+			"properties": {
+				"Hospital": "Newport Hospital And Clinic",
+				"City": "Newport",
+				"State": "AR",
+				"RUCA": "7",
+				"CBSA": "Neither",
+				"Medicare_Payment": "PPS",
+				"Closure_Month": "October",
+				"Closure_Year": 2005,
+				"Current_Status": "unknown",
+				"Number_of_Beds": 86,
+				"Longitude": -91.257283,
+				"Latitude": 35.608182
+			}
+		},
+		{
+			"type": "Feature",
+			"id": 116,
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					-75.394918,
+					42.304709
+				]
+			},
+			"properties": {
+				"Hospital": "The Hospital",
+				"City": "Sidney",
+				"State": "NY",
+				"RUCA": "7.2",
+				"CBSA": "Neither",
+				"Medicare_Payment": "MDH",
+				"Closure_Month": "August",
+				"Closure_Year": 2005,
+				"Number_of_Beds": 45,
+				"Current_Status": "Emergency Care Facility and renamed Tri-Town Regional Hospital",
+				"Longitude": -75.394918,
+				"Latitude": 42.304709
+			}
+		},
+		{
+			"type": "Feature",
+			"id": 117,
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					-98.537943,
+					32.105903
+				]
+			},
+			"properties": {
+				"Hospital": "Deleon Hospital",
+				"City": "De Leon",
+				"State": "TX",
+				"RUCA": "10",
+				"CBSA": "Neither",
+				"Medicare_Payment": "CAH",
+				"Closure_Month": "July",
+				"Closure_Year": 2005,
+				"Current_Status": "unknown",
+				"Number_of_Beds": 14,
+				"Longitude": -98.537943,
+				"Latitude": 32.105903
+			}
+		},
+		{
+			"type": "Feature",
+			"id": 118,
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					-96.875205,
+					29.912007
+				]
+			},
+			"properties": {
+				"Hospital": "Fayette Memorial Hospital",
+				"City": "La Grange",
+				"State": "TX",
+				"RUCA": "7",
+				"CBSA": "Neither",
+				"Medicare_Payment": "PPS",
+				"Closure_Month": "July",
+				"Closure_Year": 2005,
+				"Current_Status": "unknown",
+				"Number_of_Beds": 24,
+				"Longitude": -96.875205,
+				"Latitude": 29.912007
+			}
+		},
+		{
+			"type": "Feature",
+			"id": 119,
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					-95.539553,
+					45.613506
+				]
+			},
+			"properties": {
+				"Hospital": "Minnewaska District Hospital",
+				"City": "Starbuck",
+				"State": "MN",
+				"RUCA": "10",
+				"CBSA": "Neither",
+				"Medicare_Payment": "CAH",
+				"Closure_Month": "June",
+				"Closure_Year": 2005,
+				"Number_of_Beds": 19,
+				"Current_Status": "None",
+				"Longitude": -95.539553,
+				"Latitude": 45.613506
+			}
+		},
+		{
+			"type": "Feature",
+			"id": 120,
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					-89.209932,
+					33.303177
+				]
+			},
+			"properties": {
+				"Hospital": "Choctaw County Medical Center",
+				"City": "Ackerman",
+				"State": "MS",
+				"RUCA": "5",
+				"CBSA": "Neither",
+				"Medicare_Payment": "CAH",
+				"Closure_Month": "December",
+				"Closure_Year": 2009,
+				"Number_of_Beds": 17,
+				"Current_Status": "Re-opened in October 2010 as Choctaw Regional Medical Center",
+				"Longitude": -89.209932,
+				"Latitude": 33.303177
+			}
+		},
+		{
+			"type": "Feature",
+			"id": 121,
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					-94.459342,
+					36.408641
+				]
+			},
+			"properties": {
+				"Hospital": "Gravette Medical Center Hospital",
+				"City": "Gravette",
+				"State": "AR",
+				"RUCA": "2",
+				"CBSA": "Metro",
+				"Medicare_Payment": "CAH",
+				"Closure_Month": "September",
+				"Closure_Year": 2005,
+				"Number_of_Beds": 25,
+				"Current_Status": "Re-opened in 2008 as Ozarks Community Hospital of Gravette",
+				"Longitude": -94.459342,
+				"Latitude": 36.408641
+			}
+		},
+		{
+			"type": "Feature",
+			"id": 122,
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					-85.302974,
+					29.811876
+				]
+			},
+			"properties": {
+				"Hospital": "Gulf Pines Hospital",
+				"City": "Port Saint Joe",
+				"State": "FL",
+				"RUCA": "7.1",
+				"CBSA": "Metro",
+				"Medicare_Payment": "PPS",
+				"Closure_Month": "March",
+				"Closure_Year": 2005,
+				"Number_of_Beds": 45,
+				"Current_Status": "None",
+				"Longitude": -85.302974,
+				"Latitude": 29.811876
+			}
+		},
+		{
+			"type": "Feature",
+			"id": 123,
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					-90.45627,
+					31.591407
+				]
+			},
+			"properties": {
+				"Hospital": "Kings Daughters Hospital-Greenville",
+				"City": "Greenville",
+				"State": "MS",
+				"RUCA": "4.0",
+				"CBSA": "Micro",
+				"Medicare_Payment": "PPS",
+				"Closure_Month": "March",
+				"Closure_Year": 2005,
+				"Number_of_Beds": 99,
+				"Current_Status": "Rehabilitation facility",
+				"Longitude": -90.45627,
+				"Latitude": 31.591407
+			}
+		},
+		{
+			"type": "Feature",
+			"id": 124,
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					-81.657819,
+					35.249587
+				]
+			},
+			"properties": {
+				"Hospital": "Crawley Memorial Hospital",
+				"City": "Boiling Springs",
+				"State": "NC",
+				"RUCA": "5.0",
+				"CBSA": "Micro",
+				"Medicare_Payment": "MDH",
+				"Closure_Month": "December",
+				"Closure_Year": 2009,
+				"Number_of_Beds": 60,
+				"Current_Status": "None",
+				"Longitude": -81.657819,
+				"Latitude": 35.249587
+			}
+		},
+		{
+			"type": "Feature",
+			"id": 125,
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					-114.615312,
+					32.732453
+				]
+			},
+			"properties": {
+				"Hospital": "Fort Yuma PHS Indian Hospital",
+				"City": "Yuma",
+				"State": "AZ",
+				"RUCA": "1.0",
+				"CBSA": "Metro",
+				"Medicare_Payment": "CAH",
+				"Closure_Month": "June",
+				"Closure_Year": 2007,
+				"Number_of_Beds": 15,
+				"Current_Status": "None",
+				"Longitude": -114.615312,
+				"Latitude": 32.732453
+			}
+		},
+		{
+			"type": "Feature",
+			"id": 126,
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					-116.187478,
+					41.944479
+				]
+			},
+			"properties": {
+				"Hospital": "Owyhee Community Health Facility",
+				"City": "Owyhee",
+				"State": "NV",
+				"RUCA": "10",
+				"CBSA": "MIcro",
+				"Medicare_Payment": "CAH",
+				"Closure_Month": "November",
+				"Closure_Year": 2007,
+				"Number_of_Beds": 15,
+				"Current_Status": "Health clinic",
+				"Longitude": -116.187478,
+				"Latitude": 41.944479
+			}
+		}
+	]
+}
