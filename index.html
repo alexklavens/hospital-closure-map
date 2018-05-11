@@ -43,10 +43,6 @@ html, body {
   pointer-events: none;
 }
 
-/* .states {
-  fill: #ccc;
-  stroke: #fff;
-} */
 
 #symbol {
   fill: rgb(255, 100, 5);
@@ -82,6 +78,16 @@ th, td {
 
 h1 {
   text-align: left;
+}
+
+#tooltip {
+  color: white;
+  font-size: 1em;
+  padding: 5px;
+  background-color: rgb(110, 110, 110);
+  border-radius: 5px;
+  /* max-width: 100px; */
+  opacity: .9;
 }
 
 </style>
@@ -136,6 +142,15 @@ var projection = d3.geo.albersUsa()
 var path = d3.geo.path()
   .projection(projection);
 
+
+var tooltip = d3.select("body")
+	.append("div")
+  .attr("id","tooltip")
+	.style("position", "absolute")
+	.style("z-index", "10")
+	.style("visibility", "hidden")
+  .text("");
+
 var svg = d3.select("body").append("svg")
     .attr("width", "100%")
     .attr("height", "100%");
@@ -144,7 +159,7 @@ var svg = d3.select("body").append("svg")
       .attr("class","background")
       .attr("width", "100%")
       .attr("height", "100%")
-      .on("click", clicked);
+      .on("click", activate_hospital);
 
 var g = svg.append("g");
 
@@ -188,13 +203,13 @@ function zoomIn_counties(){
   g.append("g")
     .attr("id","symbol")
     .selectAll("path")
-    .data(hospital.features.sort(function(a, b) { return parseInt(b.Number_of_Beds) - parseInt(a.Number_of_Beds); }))
+    .data(hospital.features.sort(function(a, b) { return parseInt(b.properties.Number_of_Beds) - parseInt(a.properties.Number_of_Beds); }))
     .enter().append("path")
     .attr("d",path.pointRadius(function (d) {return radius(d.properties["Number_of_Beds"])}))
       .on("click",function(d){
         active_hospital = d;
-        anyActive = clicked(d);
-        returnTitle(d);
+        anyActive = activate_hospital(d);
+        fillInfoBox(d);
         if (anyActive == false) { //zoom out
            zoomedIn = false; adjustRadius(1, 2000);
            d3.selectAll("g").style("stroke-width",".2px");
@@ -203,10 +218,17 @@ function zoomIn_counties(){
           d3.selectAll("g").style("stroke-width",".1px");
           zoomedIn = true; adjustRadius(.2, trans);
           zoomIn_counties();
+
         }})
       .on("mouseover",function(d){
+        tooltip.style("visibility", "visible")
+        .style("top", (event.pageY-20)+"px")
+                .style("left",(event.pageX+20)+"px")
+                .text(d.properties.Hospital);
+                  // .select("hos-name")
+                  // .text(d.properties.Hospital);
         if (zoomedIn == false) {
-          returnTitle(d);
+          fillInfoBox(d);
         } else if (zoomedIn) {
         } else if (zoomedIn && d == active_hospital) {
           console.log(d);
@@ -214,8 +236,9 @@ function zoomIn_counties(){
         d3.select(this).style("stroke","#000");
         })
 
-
       .on("mouseout",function(){
+      tooltip.style("visibility", "hidden");
+
       d3.select(this).style("stroke","#FFF");});
 }
 
@@ -226,39 +249,37 @@ function adjustRadius(adjust_fraction, durr = trans){
       .attr("d",path.pointRadius(function(d){return radius(d.properties.Number_of_Beds)*adjust_fraction}));
   }
 
-function returnTitle(d){
+function fillInfoBox(d){
   document.getElementById('hos-name').innerHTML = d.properties.Hospital;
   document.getElementById('closure-date').innerHTML = d.properties["Closure_Year"]
   document.getElementById('num-beds').innerHTML = d.properties["Number_of_Beds"];
   document.getElementById('coords').innerHTML = d.geometry.coordinates;
   document.getElementById('city-state').innerHTML = d.properties["City"] + ", " + d.properties["State"];
-
 }
 
-function makeList(d){
-  for (var property in d){
-    if (property == "properties"){
-      var list = document.createElement('ul');
-      for (var sub in d[property]){
-        // console.log(sub + " ----- " + d[property][sub]);
-        var item = document.createElement("li");
-        item.appendChild(document.createTextNode(sub));
-        list.appendChild(item)
-      }
-    }
-  }
-  return list;
-}
+// function makeList(d){
+//   for (var property in d){
+//     if (property == "properties"){
+//       var list = document.createElement('ul');
+//       for (var sub in d[property]){
+//         // console.log(sub + " ----- " + d[property][sub]);
+//         var item = document.createElement("li");
+//         item.appendChild(document.createTextNode(sub));
+//         list.appendChild(item)
+//       }
+//     }
+//   }
+//   return list;
+// }
+//
+// function set_data_box(d){
+//   var list = document.getElementById("info-box");
+//   list.removeChild(list.childNodes[0]);
+//   console.log(list)
+//   var newItem = document.getElementById('info-box').appendChild(makeList(d));
+// }
 
-function set_data_box(d){
-  var list = document.getElementById("info-box");
-  list.removeChild(list.childNodes[0]);
-  console.log(list)
-  var newItem = document.getElementById('info-box').appendChild(makeList(d));
-}
-
-function clicked(d) {
-  // console.log(d.properties.Number_of_Beds);
+function activate_hospital(d) {
   var x, y, k, zoomedIn;
   if (d && centered !== d) {
     var centroid = path.centroid(d);
