@@ -44,12 +44,14 @@
 
 
 
+
+
 #tooltip {
   color: white;
   font-size: 1em;
   padding: 5px;
   background-color: rgb(110, 110, 110);
   border-radius: 5px;
-  /* max-width: 100px; */
+  max-width: 100px;
   opacity: .9;
 }

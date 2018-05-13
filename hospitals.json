@@ -1,4 +1,4 @@
-{
+''{
 	"type": "FeatureCollection",
 	"features": [
 		{
@@ -1562,7 +1562,7 @@
 				]
 			},
 			"properties": {
-				"Hospital": "St. Maryu0027s Hospital",
+				"Hospital": "St. Mary's Hospital",
 				"City": "Streator",
 				"State": "Illinois",
 				"RUCA": 4,
@@ -2612,7 +2612,7 @@
 				]
 			},
 			"properties": {
-				"Hospital": "St Josephu0027s Hospital Of Huntingburg, Inc",
+				"Hospital": "St Joseph's Hospital Of Huntingburg, Inc",
 				"City": "Huntingburg",
 				"State": "IN",
 				"RUCA": "5",

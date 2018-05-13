@@ -1,12 +1,16 @@
 <!DOCTYPE html>
+<html>
+
+
 <head>
-  <title>Hospital Closures In The U.S. | Alex Klavens</title>
+  <title>Hospital Closures In The U.S. | Alex Klavens </title>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="Rural Hospital Closures in the U.S.">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="description" content="Rural Hospital Closures in the U.S." />
 
 
   <link rel="stylesheet" type="text/css" href="style.css" />
+
   <link rel="stylesheet" type="text/css" href="map-style.css" />
 
   <meta name="twitter:card" content="summary_large_image">
@@ -24,30 +28,85 @@
 <script src="https://d3js.org/topojson.v1.min.js"></script>
 <script src="https://d3js.org/queue.v1.min.js"></script>
 
-<body>
-  <div id="info-box">
+<style>
+  #showInfoBox-button {
+    border: 1px solid black;
+    border-radius: 3px;
+    background: rgb(200, 200, 200);
+    font-size: 1.3em;
 
-    <h1>U.S. Hospital Closures Since 2005</h1>
+    margin-bottom: 10px;
+  }
+  #info-box {
+    visibility: visible;
+  }
+
+
+
+</style>
+
+<body>
+  <h1>U.S. Hospital Closures Since 2005</h1>
+  <button id="showInfoBox-button">Show Details</button>
+  <div id="info-box">
     <table>
       <tr>
         <th>Hospital</th>
-        <th>Closure Year</th>
-        <th>Number of Beds</th>
-        <th>Location</th>
-        <th>Coordinates</th>
-
+        <td width ="450px" id="hos-name"> hospital_name </td>
       </tr>
       <tr>
-        <td width ="450px" id="hos-name"> hospital_name </td>
+        <th>Closure Year</th>
         <td id="closure-date"> closure_date </td>
-        <td id="num-beds"> number_of_beds </td>
-        <td width="200px" id="city-state"> city, state</td>
-        <td width="200px" id="coords"> coords</td>
-
       </tr>
+      <tr>
+        <th>Number of Beds</th>
+        <td id="closure-date"> closure_date </td>
+      </tr>
+      <tr>
+        <th>Locaiton</th>
+        <td width="200px" id="city-state"> city, state</td>
+      </tr>
+      <tr>
+        <th>Coordinates</th>
+        <td width="200px" id="city-state"> city, state</td>
+      </tr>
+
+
     </table>
   </div>
 </body>
+
+<script>
+  function showInfoBox(){
+    var show = "Show Details",
+        hide = "Hide Details";
+    var thisText = document.getElementById("showInfoBox-button").innerHTML;
+    if (thisText == hide){
+      document.getElementById("info-box").style.visibility = "collapse";
+      document.getElementById("showInfoBox-button").innerHTML = show;
+    } else if (thisText == show) {
+      document.getElementById("info-box").style.visibility = "visible";
+      document.getElementById("showInfoBox-button").innerHTML = hide;
+    }
+    // else{
+    //   document.getElementById("info-box").style.visibility = "visible";
+    //   document.getElementById("showInfoBox-button").innerHTML = "Hide Info Box";
+    // }
+  }
+</script>
+
+<style>
+  #tooltip {
+    color: white;
+    font-size: 1em;
+    padding: 5px;
+    background-color: rgb(110, 110, 110);
+    border-radius: 5px;
+    max-width: 200px;
+    opacity: .9;
+    font-family: Futura;
+  }
+</style>
 
 <script>
 var mult = 1;
@@ -77,6 +136,7 @@ var tooltip = d3.select("body")
 	.style("position", "absolute")
 	.style("z-index", "10")
 	.style("visibility", "hidden")
+  .style("border-radius","2px")
   .text("");
 
 var svg = d3.select("body").append("svg")
@@ -98,7 +158,6 @@ queue()
 
 function ready(error, us, hospital) {
   if (error) throw error;
-
   var active_hospital;
   main_geo_unit = us.objects.states;
 
@@ -114,18 +173,15 @@ function ready(error, us, hospital) {
     .attr("id", "borders")
     .attr("d", path(topojson.mesh(us, main_geo_unit, function(a, b) { return a = b; })));
 
+  g.append("path")
+    .datum(topojson.mesh(us, us.objects.counties, function (a,b) {return a !== b;}))
+    .attr("id", "county-borders")
+    .attr("d", path(topojson.mesh(us, us.objects.counties, function(a, b) { return a !== b; })));
 
-    g.append("path")
-      .datum(topojson.mesh(us, us.objects.counties, function (a,b) {return a !== b;}))
-      .attr("id", "county-borders")
-      .attr("d", path(topojson.mesh(us, us.objects.counties, function(a, b) { return a !== b; })));
-
-
-function zoomIn_counties(){
-    d3.select('#county-borders')
-    .attr("d", path(topojson.mesh(us, us.objects.counties, function(a, b) { return a == b; })));
-  }
-
+  function zoomIn_counties(){
+      d3.select('#county-borders')
+      .attr("d", path(topojson.mesh(us, us.objects.counties, function(a, b) { return a == b; })));
+    }
 
   var anyActive;
   g.append("g")
@@ -146,18 +202,16 @@ function zoomIn_counties(){
           d3.selectAll("g").style("stroke-width",".1px");
           zoomedIn = true; adjustRadius(.2, trans);
           zoomIn_counties();
-
         }})
+
       .on("mouseover",function(d){
+        var setText = getToolTipInfo(d);
         tooltip.style("visibility", "visible")
         .style("top", (event.pageY-20)+"px")
                 .style("left",(event.pageX+20)+"px")
-                .text(d.properties.Hospital);
-                  // .select("hos-name")
-                  // .text(d.properties.Hospital);
+                .text(setText);
         if (zoomedIn == false) {
           fillInfoBox(d);
-        } else if (zoomedIn) {
         } else if (zoomedIn && d == active_hospital) {
           console.log(d);
         }
@@ -165,9 +219,9 @@ function zoomIn_counties(){
         })
 
       .on("mouseout",function(){
-      tooltip.style("visibility", "hidden");
-
-      d3.select(this).style("stroke","#FFF");});
+        tooltip.style("visibility", "hidden");
+        d3.select(this).style("stroke","#FFF");
+          });
 }
 
 function adjustRadius(adjust_fraction, durr = trans){
@@ -177,6 +231,15 @@ function adjustRadius(adjust_fraction, durr = trans){
       .attr("d",path.pointRadius(function(d){return radius(d.properties.Number_of_Beds)*adjust_fraction}));
   }
 
+
+function getToolTipInfo(d){
+  var hospital = d.properties.Hospital,
+      beds = d.properties.Number_of_Beds;
+  return hospital+"'s closure resulted in the loss of " + beds+ " beds";
+  // return '<tspan>'+hospital+'</tspan>' + "'s closure resulted in the loss of " + '<tspan>'+beds+'</tspan>' + " beds";
+
+}
+
 function fillInfoBox(d){
   document.getElementById('hos-name').innerHTML = d.properties.Hospital;
   document.getElementById('closure-date').innerHTML = d.properties["Closure_Year"]
@@ -184,28 +247,6 @@ function fillInfoBox(d){
   document.getElementById('coords').innerHTML = d.geometry.coordinates;
   document.getElementById('city-state').innerHTML = d.properties["City"] + ", " + d.properties["State"];
 }
-
-// function makeList(d){
-//   for (var property in d){
-//     if (property == "properties"){
-//       var list = document.createElement('ul');
-//       for (var sub in d[property]){
-//         // console.log(sub + " ----- " + d[property][sub]);
-//         var item = document.createElement("li");
-//         item.appendChild(document.createTextNode(sub));
-//         list.appendChild(item)
-//       }
-//     }
-//   }
-//   return list;
-// }
-//
-// function set_data_box(d){
-//   var list = document.getElementById("info-box");
-//   list.removeChild(list.childNodes[0]);
-//   console.log(list)
-//   var newItem = document.getElementById('info-box').appendChild(makeList(d));
-// }
 
 function activate_hospital(d) {
   var x, y, k, zoomedIn;
@@ -232,8 +273,7 @@ function activate_hospital(d) {
       .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")scale(" + k + ")translate(" + -x + "," + -y + ")")
       .style("stroke-width", 1.5 / k + "px");
   return zoomedIn;
-
 }
 
-
 </script>
+</html>
