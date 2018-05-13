@@ -9,7 +9,7 @@
   <meta name="description" content="Rural Hospital Closures in the U.S." />
 
 
-  <link rel="stylesheet" type="text/css" href="style.css" />
+  <!-- <link rel="stylesheet" type="text/css" href="style.css" /> -->
 
   <link rel="stylesheet" type="text/css" href="map-style.css" />
 
@@ -29,25 +29,92 @@
 <script src="https://d3js.org/queue.v1.min.js"></script>
 
 <style>
+  html {
+    font-family: Futura;
+    font-weight: lighter;
+  }
+
+  html, body {
+    width: 100%;
+    height: 100%;
+  }
+
+  h1 {
+    font-weight: lighter;
+    font-size: 3em;
+    text-align: center;
+  }
+
+
+
+  table {
+    margin-bottom: 20px;
+    table-layout: auto;
+    border: 1px solid black;
+    border-collapse: collapse;
+    background: none;
+  }
+
+
+  th, td {
+    /* margin: 10px; */
+    text-align: left;
+    padding-left: 5px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 15px;
+    max-height: 10px;
+  }
+
   #showInfoBox-button {
     border: 1px solid black;
     border-radius: 3px;
-    background: rgb(200, 200, 200);
+    background: rgb(245, 245, 245);
     font-size: 1.3em;
-
     margin-bottom: 10px;
+
+    text-align: center;
+    margin-left: 40%;
+    margin-right: 40%;
+    display: inline
+    margin-bottom:30px;
+
   }
   #info-box {
-    visibility: visible;
+
+    max-width: 20px;
+    right: 15%;
+    top: 45%;
+
+
+    display: inline-block;
+    visibility: collapse;
+    font-family: Futura;
+
+    float: right;
+    position: absolute;
+    z-index: 2;
+
   }
 
+  svg {
+    max-width: 100%;
+    margin-left: 12%;
+    margin-right: 12%;
+    position: static;
+    display: inline-block;
+    z-index: 1;
 
 
+
+
+  }
 </style>
 
 <body>
   <h1>U.S. Hospital Closures Since 2005</h1>
-  <button id="showInfoBox-button">Show Details</button>
+  <button id="showInfoBox-button" onclick="showInfoBox()">Show Hospital Details</button>
+  <svg></svg>
   <div id="info-box">
     <table>
       <tr>
@@ -60,53 +127,37 @@
       </tr>
       <tr>
         <th>Number of Beds</th>
-        <td id="closure-date"> closure_date </td>
+        <td id="num-beds"> num_beds </td>
       </tr>
       <tr>
         <th>Locaiton</th>
         <td width="200px" id="city-state"> city, state</td>
       </tr>
       <tr>
-        <th>Coordinates</th>
-        <td width="200px" id="city-state"> city, state</td>
+        <th>Current Status</th>
+        <td width="200px" id="current-status" style="width: 400px;"> current status</td>
       </tr>
-
-
     </table>
   </div>
+
 </body>
 
 <script>
   function showInfoBox(){
-    var show = "Show Details",
-        hide = "Hide Details";
+    var show = "Show Hospital Details",
+        hide = "Hide Hospital Details";
     var thisText = document.getElementById("showInfoBox-button").innerHTML;
-    if (thisText == hide){
+    if (thisText == hide){ //is shown, click to hide
       document.getElementById("info-box").style.visibility = "collapse";
       document.getElementById("showInfoBox-button").innerHTML = show;
-    } else if (thisText == show) {
+      document.getElementsByTagName("svg")[0].style.maxWidth = "100%";
+    } else if (thisText == show) { //is hidden, click to show
       document.getElementById("info-box").style.visibility = "visible";
       document.getElementById("showInfoBox-button").innerHTML = hide;
+      document.getElementsByTagName("svg")[0].style.maxWidth = "100%";
     }
-    // else{
-    //   document.getElementById("info-box").style.visibility = "visible";
-    //   document.getElementById("showInfoBox-button").innerHTML = "Hide Info Box";
-    // }
   }
 </script>
-
-<style>
-  #tooltip {
-    color: white;
-    font-size: 1em;
-    padding: 5px;
-    background-color: rgb(110, 110, 110);
-    border-radius: 5px;
-    max-width: 200px;
-    opacity: .9;
-    font-family: Futura;
-  }
-</style>
 
 <script>
 var mult = 1;
@@ -123,13 +174,14 @@ var radius = d3.scale.sqrt()
 // width= width * 1.4;
 var projection = d3.geo.albersUsa()
   // .scale(1070)
-  .scale(width)
+  .scale(width*1.2)
   .translate([width / 2, height / 2]);
 
 var path = d3.geo.path()
   .projection(projection);
 
 
+var anyActive;
 var tooltip = d3.select("body")
 	.append("div")
   .attr("id","tooltip")
@@ -139,9 +191,13 @@ var tooltip = d3.select("body")
   .style("border-radius","2px")
   .text("");
 
-var svg = d3.select("body").append("svg")
-    .attr("width", "100%")
-    .attr("height", "100%");
+// var svg = d3.select("body").append("svg")
+//     .attr("width", (960*1.2))
+//     .attr("height", 600);
+
+var svg = d3.select("svg")
+        .attr("width", (960*1.2))
+        .attr("height", 600);
 
     svg.append("rect")
       .attr("class","background")
@@ -178,50 +234,52 @@ function ready(error, us, hospital) {
     .attr("id", "county-borders")
     .attr("d", path(topojson.mesh(us, us.objects.counties, function(a, b) { return a !== b; })));
 
-  function zoomIn_counties(){
-      d3.select('#county-borders')
-      .attr("d", path(topojson.mesh(us, us.objects.counties, function(a, b) { return a == b; })));
-    }
 
-  var anyActive;
   g.append("g")
     .attr("id","symbol")
     .selectAll("path")
     .data(hospital.features.sort(function(a, b) { return parseInt(b.properties.Number_of_Beds) - parseInt(a.properties.Number_of_Beds); }))
     .enter().append("path")
     .attr("d",path.pointRadius(function (d) {return radius(d.properties["Number_of_Beds"])}))
-      .on("click",function(d){
-        active_hospital = d;
-        anyActive = activate_hospital(d);
-        fillInfoBox(d);
-        if (anyActive == false) { //zoom out
-           zoomedIn = false; adjustRadius(1, 2000);
-           d3.selectAll("g").style("stroke-width",".2px");
-         }
-        else { //zoom in
-          d3.selectAll("g").style("stroke-width",".1px");
-          zoomedIn = true; adjustRadius(.2, trans);
-          zoomIn_counties();
-        }})
+      .on("click",symbol_onClick)
+      .on("mouseover",mouseover)
+      .on("mouseout",mouseout);
+}
 
-      .on("mouseover",function(d){
-        var setText = getToolTipInfo(d);
-        tooltip.style("visibility", "visible")
-        .style("top", (event.pageY-20)+"px")
-                .style("left",(event.pageX+20)+"px")
-                .text(setText);
-        if (zoomedIn == false) {
-          fillInfoBox(d);
-        } else if (zoomedIn && d == active_hospital) {
-          console.log(d);
-        }
-        d3.select(this).style("stroke","#000");
-        })
+function symbol_onClick(d){
+  active_hospital = d;
+  anyActive = activate_hospital(d);
+  fillInfoBox(d);
+  if (anyActive == false) { //zoom out
+     zoomedIn = false; adjustRadius(1, 2000);
+     d3.selectAll("g").style("stroke-width",".2");
+   }
+  else { //zoom in
+    d3.selectAll("g").style("stroke-width",".1px");
+    zoomedIn = true; adjustRadius(.2, trans);
+  }
+}
 
-      .on("mouseout",function(){
-        tooltip.style("visibility", "hidden");
-        d3.select(this).style("stroke","#FFF");
-          });
+function mouseover(d){
+  var setText = getToolTipInfo(d);
+  tooltip.style("visibility", "visible")
+  .style("top", (event.pageY-20)+"px")
+          .style("left",(event.pageX+20)+"px")
+          .text(setText);
+  if (zoomedIn == false) {
+    fillInfoBox(d);
+  } else if (zoomedIn){
+
+  } else if (zoomedIn && d == active_hospital) {
+    // console.log(d);
+  }
+  d3.select(this).style("stroke","#000");
+}
+
+
+function mouseout(){
+  tooltip.style("visibility", "hidden");
+  d3.select(this).style("stroke","#FFF");
 }
 
 function adjustRadius(adjust_fraction, durr = trans){
@@ -235,17 +293,36 @@ function adjustRadius(adjust_fraction, durr = trans){
 function getToolTipInfo(d){
   var hospital = d.properties.Hospital,
       beds = d.properties.Number_of_Beds;
-  return hospital+"'s closure resulted in the loss of " + beds+ " beds";
-  // return '<tspan>'+hospital+'</tspan>' + "'s closure resulted in the loss of " + '<tspan>'+beds+'</tspan>' + " beds";
 
+
+  if (anyActive) {
+    var status = d.properties.Current_Status;
+    var month = d.properties.Closure_Month;
+    var year = d.properties.Closure_Year,
+    ifAnyActive = "";
+
+
+    var closedIN = hospital + " closed in " + month + " " + year + ".";
+    var bedLoss  = " It resulted in the loss of " + beds+ " beds. ";
+
+    if (status.toLowerCase() == "none") {
+      ifAnyActive = "The current status of this facility is unknown.";
+    } else {
+      ifAnyActive = "The current status of this facility is: " + status;
+    }
+    return closedIN + bedLoss+ ifAnyActive;
+  } else {
+      return hospital+"'s closure resulted in the loss of " + beds+ " beds.   ";
+    }
 }
 
 function fillInfoBox(d){
   document.getElementById('hos-name').innerHTML = d.properties.Hospital;
   document.getElementById('closure-date').innerHTML = d.properties["Closure_Year"]
   document.getElementById('num-beds').innerHTML = d.properties["Number_of_Beds"];
-  document.getElementById('coords').innerHTML = d.geometry.coordinates;
+  // document.getElementById('coords').innerHTML = d.geometry.coordinates;
   document.getElementById('city-state').innerHTML = d.properties["City"] + ", " + d.properties["State"];
+  document.getElementById('current-status').innerHTML = d.properties["Current_Status"];
 }
 
 function activate_hospital(d) {

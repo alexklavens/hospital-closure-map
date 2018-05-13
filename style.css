@@ -1,5 +1,5 @@
 html {
-  font-family: Times;
+  font-family: monospace;
   font-weight: lighter;
 }
 
@@ -9,32 +9,18 @@ html, body {
 }
 
 table {
-  /* margin-bottom: 20px; */
-  /* table-layout: auto; */
-  /* border-collapse: collapse; */
+  margin-bottom: 20px;
+  table-layout: auto;
+  border-collapse: collapse;
 }
 
-table, th, td {
-  /* border: 1px solid black; */
-  /* border-collapse: collapse; */
-}
 
 th {
   background: rgb(9, 189, 0);
 }
 
-/* th, td {
+th, td {
     margin: 10px;
     text-align: left;
-    padding: 15px;
-} */
-
-h1 {
-  text-align: left;
-  font-family: monospace;
-}
-
-#info-box{
-  /* visibility: hidden; */
-  margin-left: 100px;
+    padding: 20px;
 }
