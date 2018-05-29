@@ -98,22 +98,35 @@
   }
 
   svg {
-    max-width: 100%;
+    /* max-width: 100%; */
     margin-left: 12%;
     margin-right: 12%;
     position: static;
     display: inline-block;
     z-index: 1;
+  }
 
+  #code-link, a {
+    font-size: .5em;
+    text-align: center;
+    text-decoration: none;
+  }
+  a {
+    border: 2px solid black;
+    padding: 2px;
+    border-radius: 3px;
+  }
 
-
-
+  a:hover {
+    background-color: rgb(255, 181, 103);
   }
 </style>
 
 <body>
   <h1>U.S. Hospital Closures Since 2005</h1>
   <button id="showInfoBox-button" onclick="showInfoBox()">Show Hospital Details</button>
+  <p id="code-link"><a href="https://github.com/alexklavens/hospital-closure-map">The Code</a></p>
+
   <svg></svg>
   <div id="info-box">
     <table>
@@ -190,10 +203,6 @@ var tooltip = d3.select("body")
 	.style("visibility", "hidden")
   .style("border-radius","2px")
   .text("");
-
-// var svg = d3.select("body").append("svg")
-//     .attr("width", (960*1.2))
-//     .attr("height", 600);
 
 var svg = d3.select("svg")
         .attr("width", (960*1.2))
