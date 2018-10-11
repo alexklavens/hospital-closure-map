@@ -1,5 +1,9 @@
 # Rural Hospital Closures Since 2005
 
+[Check it out!](https://alexklavens.github.io/hospital-closure-map)
+
+## Background
+
 While working as a news intern at WBUR during Summer 2017,
 I [reported on a decision](https://alexklavens.github.io/radio#north-adams) by the Massachusetts Attorney General to not punish
 the former leaders of a Western Massachusetts hospital that closed in 2014 with
@@ -18,3 +22,7 @@ I had to 'View Frame Source' into the google map iframe and scrape all informati
 That code is not currently in this repository, but it produced a GeoJSON-formatted representation of the data. That data can be found in the `hospitals.json` file.
 
 This is a work in progress.
+
+## Visualization
+
+This is a D3.js-based front-end project hosted by [a GitHub Pages project site.](https://alexklavens.github.io/hospital-closure-map)
