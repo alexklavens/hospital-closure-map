@@ -17,11 +17,10 @@ This visualization uses data from [University of North Carolina](http://www.shep
 
 The data was not available in a downloadable format, and their html tables do not contain information about many hospital closures that are mapped in a google maps iframe.
 
-I had to 'View Frame Source' into the google map iframe and scrape all information about hospitals using Python.
+I had to 'View Frame Source' into the google map iframe, pull out some sort of JavaScript data structure holding all the information, and clean that information using python and regular expressions.
 
 That code is not currently in this repository, but it produced a GeoJSON-formatted representation of the data. That data can be found in the `hospitals.json` file.
 
-This is a work in progress.
 
 ## Visualization
 
