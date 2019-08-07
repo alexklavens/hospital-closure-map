@@ -113,6 +113,11 @@
     position: static;
     display: inline-block;
     z-index: 1;
+    /* text-align: center; */
+  }
+
+  #svgDiv {
+    text-align: center;
   }
 
   #code-link, a {
@@ -136,7 +141,9 @@
   <p style='text-align: center;'>Click on a hospital to zoom in and learn more. Click another bubble to move to a different bubble, or click the same bubble to zoom out.</p>
   <button id="showInfoBox-button" onclick="showInfoBox()">Show Hospital Details</button>
 
+  <div id='svgDiv'>
   <svg></svg>
+  </div>
   <div id="info-box">
     <table>
       <tr>
